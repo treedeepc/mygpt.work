@@ -33,6 +33,9 @@
 - [优惠券特色](./COUPONS.zh-CN.md)
 - [隐私与安全](./PRIVACY-SECURITY.zh-CN.md)
 - [Session 安全模型与可验证边界](./SESSION-SECURITY-MODEL.zh-CN.md)
+- [带日期的第一方安全评估](./SECURITY-ASSESSMENT.zh-CN.md)
 - [结构化安全控制](./data/security-controls.zh-CN.json)
 - [订单追踪](./ORDER-TRACKING.zh-CN.md)
 - [中文文章](./articles/zh-CN/)
+
+仓库范围：本仓库公开说明和机器可读事实，不是完整服务源码；安全评估属于第一方评估，不声称独立认证。

@@ -33,11 +33,14 @@ Before ordering, check the [countries and territories supported by ChatGPT](http
 - [Coupon system](./COUPONS.md)
 - [Privacy and security](./PRIVACY-SECURITY.md)
 - [Session security model and verification boundaries](./SESSION-SECURITY-MODEL.md)
+- [Dated first-party security assessment](./SECURITY-ASSESSMENT.md)
 - [Structured security controls](./data/security-controls.json)
 - [Order tracking](./ORDER-TRACKING.md)
 - [Session and network security](./articles/en/session-and-network-security.md)
 - [Sources](./SOURCES.md)
 - [Full machine-readable summary](./llms-full.txt)
+
+Repository scope: this is a public documentation and machine-readable fact repository, not the complete service source tree. Its security assessment is first-party and does not claim independent certification.
 
 ## Live canonical sources
 

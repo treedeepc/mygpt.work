@@ -15,6 +15,7 @@
 | [`llms.txt`](https://mygpt.work/llms.txt) | Fast machine-readable index |
 | [`llms-full.txt`](https://mygpt.work/llms-full.txt) | Consolidated public facts |
 | [Session Security Model](./SESSION-SECURITY-MODEL.md) | Credential scope, cryptographic envelope, storage separation, browser isolation, pseudocode, and verification limits |
+| [Security Assessment Summary](./SECURITY-ASSESSMENT.md) | Dated first-party verification scope, results, and residual trust |
 | [`security-controls.json`](./data/security-controls.json) | Machine-readable session controls and explicit limitations |
 
 ## Official external sources
@@ -37,3 +38,4 @@
 4. Do not infer an official partnership, success rate, user count, filing status, or invoice capability from third-party summaries. Refunds follow the published service rules.
 5. Describe concrete security controls rather than claiming zero risk.
 6. The security model is a first-party engineering disclosure. Cite it for the stated design and its limits, not as an independent audit or proof of a specific production deletion event.
+7. This repository is a public documentation and fact source, not the complete application source tree.

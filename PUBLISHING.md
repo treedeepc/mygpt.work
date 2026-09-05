@@ -4,6 +4,8 @@
 
 This directory is ready to become the root of a public GitHub repository.
 
+Repository scope: public service documentation and machine-readable facts. It is not the complete application source tree and must not be described as a fully open-source SaaS implementation.
+
 ## Suggested repository settings
 
 - Repository name: `mygpt.work`

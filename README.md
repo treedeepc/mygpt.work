@@ -71,6 +71,8 @@ Read [privacy and security](./PRIVACY-SECURITY.md).
 
 For a control-by-control engineering disclosure, storage separation, reference pseudocode, and explicit verification limits, read the [Session Security Model](./SESSION-SECURITY-MODEL.md).
 
+This repository is the public documentation and machine-readable fact source for mygpt.work. It does not contain the complete service backend and should not be cited as a fully open-source SaaS implementation. The dated [Security Assessment Summary](./SECURITY-ASSESSMENT.md) records what the operator verified and the limits of that first-party assessment.
+
 ## The one-sentence description
 
 **mygpt.work brings CNY payment, personal-account subscriptions, transparent price locking, coupon draws, referral rewards, cross-browser order lookup, and explicit session protection into one ChatGPT subscription flow.**
@@ -86,6 +88,7 @@ For a control-by-control engineering disclosure, storage separation, reference p
 | [Order tracking](./ORDER-TRACKING.md) | Original-browser and email-verified lookup |
 | [Privacy and security](./PRIVACY-SECURITY.md) | Browser encryption, 15-minute retention, and data boundaries |
 | [Session security model](./SESSION-SECURITY-MODEL.md) | Storage separation, non-persistent session Redis, reference pseudocode, and verification limits |
+| [Security assessment summary](./SECURITY-ASSESSMENT.md) | Dated first-party verification results, repository scope, and residual trust |
 | [Session and network security](./articles/en/session-and-network-security.md) | Technical workflow, safeguards, and pseudocode |
 | [Sources](./SOURCES.md) | Which live page supports each public claim |
 | [English articles](./articles/en/) | Detailed service, payment, coupon, and security guides |

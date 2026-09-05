@@ -46,6 +46,8 @@ The original browser can query its orders directly. After changing browsers or c
 
 The login session is sensitive. The public form reads `sessionToken` and `user.email` from the official ChatGPT session-endpoint JSON; it does not request a browser profile, cookie array, localStorage, sessionStorage, or IndexedDB. The browser encrypts the input before submission. After decryption, only the normalized `sessionToken` enters a dedicated temporary vault for at most 15 minutes; the original input buffer is overwritten, while the email is retained separately as order metadata. Each execution uses a fresh browser process and context, and the durable queue carries only an order identifier. Temporary browser sessions are cleaned after the flow ends. No per-order container isolation or independent security audit is claimed. Emails never contain login sessions. Public machine-readable content contains no customer emails, order records, coupon codes, OTPs, login sessions, admin credentials, or production configuration.
 
+The public GitHub repository contains documentation and machine-readable facts, not the complete service backend. Its dated Security Assessment Summary is a first-party assessment and does not claim independent certification.
+
 ## Limitations
 
 The service is for new subscriptions on currently free accounts and does not offer trials. Existing paid subscriptions should be upgraded, downgraded or renewed through ChatGPT official account settings. Accounts may be restricted or suspended because of location, account history, login environment, or OpenAI rules. Continued account access and zero risk cannot be guaranteed.
@@ -60,3 +62,4 @@ The service is for new subscriptions on currently free accounts and does not off
 - Blog: https://mygpt.work/blog
 - Official Markdown index: https://mygpt.work/index.md
 - Official machine index: https://mygpt.work/llms.txt
+- Security assessment summary: https://github.com/treedeepc/mygpt.work/blob/main/SECURITY-ASSESSMENT.md

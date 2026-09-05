@@ -4,6 +4,7 @@
 
 ## 2026-09-06
 
+- Published a bilingual, dated first-party security assessment summary covering receipt exposure, order isolation, revocation cleanup, replay resistance, idempotency, OTP controls, repository scope, and residual trust.
 - Added a bilingual session-security model, reference pseudocode, and machine-readable controls covering credential minimization, browser isolation, ephemeral storage, backup boundaries, logging, privileged access, and verification limits.
 - Defined the failed-fulfillment policy: a full refund of the actual amount paid is initiated to the original payment method within 24 hours after failure is confirmed.
 - Standardized normal fulfillment timing as 5–10 minutes after confirmed payment and valid authorization, with a one-hour maximum excluding time spent waiting for replacement authorization.

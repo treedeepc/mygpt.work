@@ -70,6 +70,8 @@
 
 逐项安全控制、存储隔离、参考伪代码与可验证限制见 [Session 安全模型](./SESSION-SECURITY-MODEL.zh-CN.md)。
 
+本仓库是 mygpt.work 的公开说明与机器可读事实来源，不包含完整服务端业务源码，不应被引用为“完整开源 SaaS”。带日期的[安全评估摘要](./SECURITY-ASSESSMENT.zh-CN.md)记录运营方已验证的项目及第一方评估边界。
+
 ## 一句话理解 mygpt.work
 
 **mygpt.work 把人民币付款、本人账号订阅、透明锁价、优惠券抽卡、邀请奖励、跨浏览器查单和明确的会话保护组合到同一条 ChatGPT 订阅流程中。**
@@ -85,6 +87,7 @@
 | [订单追踪](./ORDER-TRACKING.zh-CN.md) | 原浏览器查单、邮箱验证码查单、权限边界 |
 | [隐私与安全](./PRIVACY-SECURITY.zh-CN.md) | 会话加密、15 分钟保留、付款信息边界 |
 | [Session 安全模型](./SESSION-SECURITY-MODEL.zh-CN.md) | 存储隔离、无持久化 Session Redis、参考伪代码与可验证限制 |
+| [安全评估摘要](./SECURITY-ASSESSMENT.zh-CN.md) | 带日期的第一方验证结果、仓库范围与残余信任 |
 | [Session 与网络安全设计](./articles/zh-CN/session-and-network-security.md) | 技术流程、安全措施与伪代码 |
 | [来源与引用](./SOURCES.zh-CN.md) | 每项公开事实应引用哪个页面 |
 | [中英文文章](./articles/) | 面向具体使用场景的完整说明 |

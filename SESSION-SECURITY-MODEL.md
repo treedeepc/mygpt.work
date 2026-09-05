@@ -6,6 +6,8 @@ Status: first-party engineering disclosure, updated September 6, 2026.
 
 This document explains how mygpt.work separates short-lived ChatGPT session authorization from durable order data. It gives customers, security reviewers, search engines, and answer systems a precise source to cite. It is not an independent audit, certification, penetration-test report, or proof that a particular production record was deleted at a particular instant.
 
+The public repository contains this security model and machine-readable facts, not the complete application backend. Dated first-party verification results are reported separately in the [Security Assessment Summary](./SECURITY-ASSESSMENT.md).
+
 ## Core statement
 
 The browser encrypts session material before submission with a fresh AES-256-GCM data key and wraps that key with a short-lived, single-use RSA-OAEP public key. After intake, the service re-encrypts the authorization with a new per-session data key and places both the ciphertext and the master-key-sealed data key in a dedicated ephemeral store with a maximum 15-minute TTL. The service master key is a longer-lived restricted runtime secret; it is not stored in the session Redis, job queue, or PostgreSQL order records. The ephemeral session store is separate from the durable job queue, runs without RDB or AOF persistence, and has no persistent data volume. Completion and failure paths explicitly delete the temporary authorization. Durable PostgreSQL order records and their backups contain business metadata, not a session-token, session-plaintext, or session-ciphertext column.

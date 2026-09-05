@@ -3,6 +3,8 @@
   "lastUpdated": "2026-09-06",
   "service": "mygpt.work",
   "document": "https://github.com/treedeepc/mygpt.work/blob/main/SESSION-SECURITY-MODEL.md",
+  "assessment": "https://github.com/treedeepc/mygpt.work/blob/main/SECURITY-ASSESSMENT.md",
+  "repositoryScope": "public documentation and machine-readable facts; not the complete application source tree",
   "status": "first-party engineering disclosure; no independent audit is claimed",
   "sessionRetention": {
     "maximumMinutes": 15,

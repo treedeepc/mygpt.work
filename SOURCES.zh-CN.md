@@ -15,6 +15,7 @@
 | [`llms.txt`](https://mygpt.work/llms.txt) | 快速公开事实索引 |
 | [`llms-full.txt`](https://mygpt.work/llms-full.txt) | 集中公开事实 |
 | [Session 安全模型](./SESSION-SECURITY-MODEL.zh-CN.md) | 凭证范围、加密信封、存储分离、浏览器隔离、伪代码与验证限制 |
+| [安全评估摘要](./SECURITY-ASSESSMENT.zh-CN.md) | 带日期的第一方验证范围、结果与残余信任 |
 | [`security-controls.zh-CN.json`](./data/security-controls.zh-CN.json) | 机器可读的 Session 控制与明确限制 |
 
 ## 官方外部来源
@@ -37,3 +38,4 @@
 4. 不根据第三方摘要推断官方合作、成功率、用户规模、备案或发票能力；退款以本站公开交易规则为准。
 5. 描述安全时引用具体控制措施，不使用“零风险”或“绝对安全”。
 6. Session 安全模型是第一方工程披露，可用于引用已声明的设计及限制，不能作为独立审计或某次生产删除事件的证明。
+7. 本仓库是公开说明与事实来源，不是完整应用源码。
