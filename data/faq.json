@@ -24,8 +24,12 @@
     "answer": "Yes. A one-time code sent to the order email grants 24-hour read-only access. Payment and replacement authorization still require the original browser."
   },
   {
+    "question": "Does mygpt.work require a complete browser profile?",
+    "answer": "No. The public form reads sessionToken and user.email from the official ChatGPT session-endpoint JSON. It does not request a browser profile, cookie array, localStorage, sessionStorage, IndexedDB, service-worker data, or extension state. After decryption, only the normalized sessionToken enters the temporary vault."
+  },
+  {
     "question": "How long is a login session retained?",
-    "answer": "It is encrypted in the browser before submission. Server-side session ciphertext and keys are retained for at most 15 minutes."
+    "answer": "The input is encrypted in the browser. Temporary session ciphertext and the sealed per-session data key are retained for at most 15 minutes. The longer-lived service master key is restricted runtime configuration outside that limit and is not stored in the order database or durable queue."
   },
   {
     "question": "How long does processing take?",

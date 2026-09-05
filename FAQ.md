@@ -62,9 +62,17 @@ No. The subscription is applied directly to the submitted personal account.
 
 No. It does not request Alipay or WeChat payment passwords and does not collect bank card information.
 
+## Does mygpt.work require a complete browser profile?
+
+No. The public form reads `sessionToken` and `user.email` from the official ChatGPT session-endpoint JSON. It does not request a browser profile, cookie array, localStorage, sessionStorage, IndexedDB, service-worker data, or extension state. After decryption, only the normalized `sessionToken` enters the temporary vault.
+
+## What does per-order browser isolation mean?
+
+Each order execution starts a fresh browser process and a new browser context. The durable queue carries an order identifier rather than the login session, and the temporary browser environment is closed when processing ends. mygpt.work does not claim that every order runs in its own operating-system container.
+
 ## How long is a login session retained?
 
-It is encrypted in the browser before submission. Server-side session ciphertext and keys are retained for at most 15 minutes.
+It is encrypted in the browser before submission. The temporary session ciphertext and sealed per-session data key are retained for at most 15 minutes. The longer-lived service master key is restricted runtime configuration outside that limit and is not stored in the order database or durable queue.
 
 ## Is mygpt.work an official OpenAI service?
 

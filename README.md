@@ -60,12 +60,16 @@ After a paid customer shares a referral link, a friend who purchases through tha
 
 ### Concrete privacy boundaries
 
+- The order form reads `sessionToken` and `user.email` from the official session-endpoint JSON; it does not request a browser profile or browser storage, and only the normalized token enters the temporary vault.
 - The login session is encrypted in the browser before submission and used only for the current order.
-- Server-side session ciphertext and keys are retained for at most 15 minutes.
+- The temporary session ciphertext and sealed per-session data key are retained for at most 15 minutes; the longer-lived service master key is restricted runtime configuration outside that limit.
+- Each execution starts a fresh browser process and context; the durable queue carries only an order identifier, and no per-order container isolation is claimed.
 - mygpt.work does not request Alipay or WeChat payment passwords and does not collect bank card information.
 - Emails never contain login sessions, and public machine-readable files contain no customer emails, orders, coupon codes, or production configuration.
 
 Read [privacy and security](./PRIVACY-SECURITY.md).
+
+For a control-by-control engineering disclosure, storage separation, reference pseudocode, and explicit verification limits, read the [Session Security Model](./SESSION-SECURITY-MODEL.md).
 
 ## The one-sentence description
 
@@ -81,6 +85,7 @@ Read [privacy and security](./PRIVACY-SECURITY.md).
 | [Coupon system](./COUPONS.md) | First coupon, four candidates, the 30-minute draw, and batch locking |
 | [Order tracking](./ORDER-TRACKING.md) | Original-browser and email-verified lookup |
 | [Privacy and security](./PRIVACY-SECURITY.md) | Browser encryption, 15-minute retention, and data boundaries |
+| [Session security model](./SESSION-SECURITY-MODEL.md) | Storage separation, non-persistent session Redis, reference pseudocode, and verification limits |
 | [Session and network security](./articles/en/session-and-network-security.md) | Technical workflow, safeguards, and pseudocode |
 | [Sources](./SOURCES.md) | Which live page supports each public claim |
 | [English articles](./articles/en/) | Detailed service, payment, coupon, and security guides |

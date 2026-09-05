@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-09-06",
+  "service": "mygpt.work",
+  "document": "https://github.com/treedeepc/mygpt.work/blob/main/SESSION-SECURITY-MODEL.md",
+  "status": "first-party engineering disclosure; no independent audit is claimed",
+  "sessionRetention": {
+    "maximumMinutes": 15,
+    "scope": "temporary session ciphertext, one-time intake key, and sealed per-session data key only",
+    "excluded": [
+      "service master key",
+      "order email",
+      "amount and plan",
+      "payment and fulfillment state",
+      "timestamps and audit events",
+      "coupon and referral records",
+      "notification records"
+    ]
+  },
+  "controls": [
+    {
+      "name": "browser encryption",
+      "detail": "A fresh AES-256-GCM key encrypts session material in the browser; RSA-OAEP wraps the data key with a short-lived public key."
+    },
+    {
+      "name": "input minimization",
+      "detail": "After envelope decryption, the service parses the input, writes only a normalized sessionToken to the temporary vault, and overwrites the original input buffer. The account email is retained separately as order metadata."
+    },
+    {
+      "name": "single-use intake",
+      "detail": "The private intake key is short lived and atomically consumed when an encrypted envelope is accepted."
+    },
+    {
+      "name": "ephemeral session storage",
+      "detail": "Encrypted session material is stored with a maximum 15-minute TTL in a Redis instance without RDB, AOF, or a persistent data volume."
+    },
+    {
+      "name": "storage separation",
+      "detail": "Session storage, the durable job queue, and PostgreSQL order records are separate. Durable order storage has no session-token, session-plaintext, or session-ciphertext field."
+    },
+    {
+      "name": "logging boundary",
+      "detail": "Application security events use event names, status codes, and irreversible fingerprints rather than raw login sessions."
+    },
+    {
+      "name": "explicit cleanup",
+      "detail": "Completion and failure paths delete temporary session material and close the per-order browser process and context."
+    },
+    {
+      "name": "execution isolation",
+      "detail": "Each execution launches a fresh browser process and browser context. The durable queue carries an order identifier rather than login-session content; no per-order container isolation is claimed."
+    }
+  ],
+  "limitations": [
+    "This first-party disclosure is not an independent audit or proof of a specific production deletion event.",
+    "A privileged infrastructure operator could theoretically inspect live process memory or temporary storage while authorization exists.",
+    "The service master key together with a live temporary-vault record could recover that session; the master key is not deleted per order.",
+    "The 15-minute rule does not apply to business records or all network metadata.",
+    "Deleting the service copy does not revoke an official ChatGPT login session."
+  ],
+  "credentialInput": {
+    "accepted": [
+      "official ChatGPT session-endpoint JSON containing sessionToken and user.email"
+    ],
+    "notRequested": [
+      "browser profile",
+      "cookie array",
+      "localStorage",
+      "sessionStorage",
+      "IndexedDB",
+      "service worker state",
+      "extension state"
+    ],
+    "temporaryVaultPayload": [
+      "sessionToken"
+    ],
+    "durableOrderMetadata": [
+      "email"
+    ],
+    "accessTokenOnlyAccepted": false
+  },
+  "keyHierarchy": {
+    "browserEnvelope": "Fresh AES-256-GCM data key wrapped by a short-lived RSA-OAEP public key.",
+    "temporaryVault": "Fresh per-session data key; the data key is sealed by the service master key before entering non-persistent Redis.",
+    "serviceMasterKey": "Longer-lived restricted runtime configuration outside the 15-minute rule; not stored in PostgreSQL, the durable queue, or session Redis.",
+    "explicitRisk": "The service master key together with a live temporary-vault record could recover that session."
+  }
+}

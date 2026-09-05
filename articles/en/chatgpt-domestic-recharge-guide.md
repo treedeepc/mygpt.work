@@ -29,7 +29,7 @@ The storefront shows a CNY monthly amount. It may reflect the official USD price
 
 ## Step 3: Submit your own account
 
-mygpt.work does not sell shared accounts. The login session is encrypted in the browser and is used only for the current order. Server-side session ciphertext and keys are retained for at most 15 minutes.
+mygpt.work does not sell shared accounts. The login session is encrypted in the browser and is used only for the current order. Temporary session ciphertext and the sealed per-session data key are retained for at most 15 minutes. The longer-lived service master key is restricted runtime configuration outside that limit.
 
 ## Step 4: Pay and track
 

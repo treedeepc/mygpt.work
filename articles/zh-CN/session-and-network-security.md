@@ -1,9 +1,9 @@
 ---
 title: "mygpt.work 的 Session 与网络安全设计"
 description: "从技术角度了解 mygpt.work 的浏览器端会话加密、服务端短时保存、订单权限隔离、接口限流和浏览器安全响应头。"
-summary: "mygpt.work 在浏览器内加密敏感 Session，通过短时一次性密钥完成接收，服务端密文和密钥最长保留 15 分钟，并将订单查询权限与付款、补充授权等操作隔离。"
+summary: "mygpt.work 只从官方会话 JSON 读取 sessionToken 与账号邮箱，在浏览器内加密输入，只把规范化 Token 存入无持久化临时保险库，并将订单查询权限与敏感操作隔离。"
 publishedAt: "2026-09-05"
-updatedAt: "2026-09-05"
+updatedAt: "2026-09-06"
 canonical: "https://mygpt.work/privacy"
 author: "mygpt.work 编辑部"
 category: "安全说明"
@@ -22,7 +22,11 @@ ChatGPT 登录 Session 属于敏感凭证。mygpt.work 将它视为一次订阅�
 
 本文只介绍可以公开核验的安全设计，不公开内部端点、服务拓扑、数据表、任务编排、付款执行步骤、部署方式或密钥基础设施。
 
+关于无持久化临时存储、长期数据隔离，以及第一方文档不能证明什么，可查看 [Session 安全模型与可验证边界](../../SESSION-SECURITY-MODEL.zh-CN.md)。
+
 ## Session 接收：从浏览器内开始加密
+
+下单表单从 ChatGPT 官方会话接口 JSON 读取 `sessionToken` 与 `user.email`，不导入浏览器 Profile、Cookie 数组、localStorage、sessionStorage、IndexedDB、Service Worker 数据或扩展状态。邮箱作为订单元数据保存；服务解密后，只有规范化的 `sessionToken` 进入临时保险库。
 
 生产站点使用 HTTPS。Session 提交前，浏览器通过 Web Crypto API 生成新的 AES-256-GCM 数据密钥，并在本地完成加密。GCM 是 [NIST SP 800-38D](https://csrc.nist.gov/pubs/sp/800/38/d/final) 规定的认证加密模式。浏览器随后用当前访问者取得的短时 RSA-OAEP 公钥封装数据密钥；RSAES-OAEP 的规范见 [RFC 8017](https://www.rfc-editor.org/info/rfc8017/)。
 
@@ -37,7 +41,7 @@ ChatGPT 登录 Session 属于敏感凭证。mygpt.work 将它视为一次订阅�
 
 ## 服务端使用：密文保存并严格限时
 
-解密成功后，服务端把 Session 作为加密的临时授权保存。加密授权及相关密钥材料最长 15 分钟自动过期；处理完成时可以提前销毁。
+解密成功后，服务端只把规范化的授权放入加密临时存储。临时 Session 密文与封装后的每单数据密钥最长 15 分钟自动过期；处理完成时可以提前销毁。服务主密钥属于保留时间更长的受限运行配置，不在该期限内，也不存入订单数据库、持久任务队列或临时 Redis。
 
 ```text
 授权 = 为当前订单接收(加密授权)
@@ -50,7 +54,7 @@ ChatGPT 登录 Session 属于敏感凭证。mygpt.work 将它视为一次订阅�
     销毁临时授权()
 ```
 
-处理开始前，系统校验账号身份是否与订单一致，并检查账号是否符合所选套餐的订阅条件。每笔订单使用隔离的临时浏览器环境，用完即关闭；遇到风控或人工验证挑战时停止自动流程，不尝试绕过。
+处理开始前，系统校验账号身份是否与订单一致，并检查账号是否符合所选套餐的订阅条件。每次执行会新建浏览器进程和临时 Browser Context，用完后一起关闭；这里指进程与 Context 隔离，不声称每单采用独立操作系统容器。遇到风控或人工验证挑战时停止自动流程，不尝试绕过。
 
 长期订单记录只保留付款状态、充值状态等业务信息，不把短时 Session 变成永久订单字段。如果授权在处理完成前过期，用户可以为原订单补充新的授权，无需再次付款。
 

@@ -38,9 +38,19 @@
       "@type": "PropertyValue",
       "name": "充值失败退款",
       "value": "订单确认充值失败且未完成订阅交付的，在确认失败后 24 小时内按实际付款金额原路发起全额退款；到账时间以支付渠道为准。"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Session 授权",
+      "value": "公开表单从官方会话 JSON 读取 sessionToken 与 user.email，不要求浏览器 Profile 或浏览器存储，解密后只将规范化的 sessionToken 写入最长 15 分钟的临时保险库。"
     }
   ],
   "subjectOf": [
+    {
+      "@type": "TechArticle",
+      "url": "https://github.com/treedeepc/mygpt.work/blob/main/SESSION-SECURITY-MODEL.zh-CN.md",
+      "name": "Session 安全模型与可验证边界"
+    },
     {
       "@type": "WebPage",
       "url": "https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories"

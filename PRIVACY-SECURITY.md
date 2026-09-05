@@ -7,9 +7,10 @@ mygpt.work explains concrete data boundaries instead of relying on an “absolut
 ## Login sessions
 
 - A login session is a sensitive credential and is used only for account verification and the subscription operation tied to a specific order.
+- The order form reads `sessionToken` and `user.email` from the official ChatGPT session-endpoint JSON. It does not request a browser profile, cookie array, or browser storage. Only the normalized `sessionToken` enters the temporary vault after decryption.
 - It is encrypted in the browser before submission and is not written to localStorage.
-- Server-side session ciphertext and keys are retained for at most 15 minutes.
-- Temporary browser sessions are cleaned when the flow ends.
+- The temporary session ciphertext and sealed per-session data key are retained for at most 15 minutes. The longer-lived service master key is restricted runtime configuration outside that limit and is not stored in the order database or durable queue.
+- Each execution starts a fresh browser process and context. Temporary browser sessions are cleaned when the flow ends; no per-order container isolation is claimed.
 - Emails never contain login sessions.
 
 ## Payment information
@@ -45,3 +46,5 @@ Deleting a local session copy does not revoke other ChatGPT logins. If you suspe
 Public pages, Markdown files, and this repository contain no customer emails, order records, coupon codes, one-time codes, login sessions, admin credentials, or production configuration.
 
 Current data-handling notice: [mygpt.work privacy and session authorization](https://mygpt.work/privacy)
+
+Technical controls, reference pseudocode, storage separation, and the limits of first-party verification are documented in the [Session Security Model](./SESSION-SECURITY-MODEL.md).

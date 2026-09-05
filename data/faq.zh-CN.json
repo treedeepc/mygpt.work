@@ -24,8 +24,12 @@
     "answer": "可以。使用下单邮箱接收一次性验证码后，可获得 24 小时只读查询权限。付款和补充授权仍需原下单浏览器。"
   },
   {
+    "question": "mygpt.work 会要求完整浏览器 Profile 吗？",
+    "answer": "不会。公开表单只从 ChatGPT 官方会话接口 JSON 读取 sessionToken 与 user.email，不要求浏览器 Profile、Cookie 数组、localStorage、sessionStorage、IndexedDB、Service Worker 数据或扩展状态。解密后只有规范化的 sessionToken 进入临时保险库。"
+  },
+  {
     "question": "登录会话会保存多久？",
-    "answer": "会话在浏览器内加密后提交，服务端会话密文与密钥最长保留 15 分钟。"
+    "answer": "输入在浏览器内加密。临时会话密文与封装后的每单数据密钥最长保留 15 分钟；服务主密钥属于保留时间更长的受限运行配置，不在该期限内，也不存入订单数据库或任务队列。"
   },
   {
     "question": "付款后多久到账？",

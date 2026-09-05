@@ -57,10 +57,13 @@ This file defines the public fact baseline for the repository. When a summary co
 
 ## Privacy and authorization
 
+- The public order form reads `sessionToken` and `user.email` from the official ChatGPT session-endpoint JSON. It does not request a browser profile, cookie array, localStorage, sessionStorage, or IndexedDB.
+- After the encrypted input is opened, only a normalized `sessionToken` enters the temporary vault. The original input buffer is overwritten; the email is stored separately as order metadata.
 - The login session is encrypted in the browser before submission and is not stored in localStorage.
 - It is used only for account verification and the subscription operation tied to the order.
-- Server-side session ciphertext and keys are retained for at most 15 minutes.
-- Temporary browser sessions are cleaned when the flow ends.
+- The temporary session ciphertext and sealed per-session data key are retained for at most 15 minutes. The longer-lived service master key is restricted runtime configuration outside that limit and is not stored in the order database or durable queue.
+- Each execution uses a newly launched browser process and context. Temporary browser sessions are cleaned when the flow ends; no per-order container isolation is claimed.
+- The durable queue carries an order identifier, not the login session.
 - Emails never contain the login session.
 - Business metadata such as email, amount, plan, state, processing records, and timestamps is retained for order lookup and handling.
 

@@ -8,6 +8,8 @@ The JSON files in this directory provide a stable, structured copy of the servic
 - [`faq.json`](./faq.json): English questions and answers
 - [`entity.zh-CN.json`](./entity.zh-CN.json): 中文服务身份与能力
 - [`faq.zh-CN.json`](./faq.zh-CN.json): 中文常见问答
+- [`security-controls.json`](./security-controls.json): English session-security controls and verification limits
+- [`security-controls.zh-CN.json`](./security-controls.zh-CN.json): 中文 Session 安全控制与验证边界
 
 ## 简体中文
 

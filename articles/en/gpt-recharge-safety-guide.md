@@ -25,7 +25,7 @@ mygpt.work uses the customer's own ChatGPT account. It does not sell shared or f
 
 ## 2. What happens to the login session?
 
-The session is encrypted in the browser before submission and is used only for account verification and subscription processing for the order. Server-side session ciphertext and keys are retained for at most 15 minutes.
+The session is encrypted in the browser before submission and is used only for account verification and subscription processing for the order. Temporary session ciphertext and the sealed per-session data key are retained for at most 15 minutes. The longer-lived service master key is restricted runtime configuration outside that limit.
 
 ## 3. What payment data is requested?
 

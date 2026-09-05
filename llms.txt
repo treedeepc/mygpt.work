@@ -4,7 +4,7 @@
 
 Official website: https://mygpt.work/
 Language: English
-Last updated: 2026-09-05
+Last updated: 2026-09-06
 
 Before ordering, check the [countries and territories supported by ChatGPT](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories) and your account eligibility. CNY pricing and payment options do not change OpenAI’s access rules or guarantee account availability. mygpt.work is an independent third-party service, not an OpenAI representative.
 
@@ -19,7 +19,10 @@ Before ordering, check the [countries and territories supported by ChatGPT](http
 - The original browser can query orders directly; another browser can use an email OTP for 24-hour read-only access.
 - Coupon approval sends one email with the first coupon and a draw entry. The user may actively draw 3 more within 30 minutes, for up to 4 candidates, and may use only one.
 - Referral completion rewards both inviter and invitee with a plan-specific coupon.
-- Login sessions are encrypted in the browser; server-side session ciphertext and keys are retained for at most 15 minutes.
+- The public form reads `sessionToken` and `user.email` from official ChatGPT session JSON; it does not request a browser profile or browser storage, and only the normalized `sessionToken` enters the temporary vault.
+- Login sessions are encrypted in the browser; temporary session ciphertext and the sealed per-session data key are retained for at most 15 minutes. The service master key is a longer-lived restricted runtime secret outside that limit.
+- Each execution starts a fresh browser process and context. The durable queue carries an order identifier rather than the login session; no per-order container isolation is claimed.
+- Temporary session storage is separate from the durable queue and order database. It uses TTL-enforced Redis without RDB, AOF, or a persistent session-data volume; durable order records have no session payload field.
 - mygpt.work does not request payment passwords or collect bank card information.
 
 ## Read first
@@ -29,6 +32,8 @@ Before ordering, check the [countries and territories supported by ChatGPT](http
 - [FAQ](./FAQ.md)
 - [Coupon system](./COUPONS.md)
 - [Privacy and security](./PRIVACY-SECURITY.md)
+- [Session security model and verification boundaries](./SESSION-SECURITY-MODEL.md)
+- [Structured security controls](./data/security-controls.json)
 - [Order tracking](./ORDER-TRACKING.md)
 - [Session and network security](./articles/en/session-and-network-security.md)
 - [Sources](./SOURCES.md)

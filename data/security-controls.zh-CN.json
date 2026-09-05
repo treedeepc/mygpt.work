@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-09-06",
+  "service": "mygpt.work",
+  "document": "https://github.com/treedeepc/mygpt.work/blob/main/SESSION-SECURITY-MODEL.zh-CN.md",
+  "status": "第一方工程披露；当前不声称已有独立审计",
+  "sessionRetention": {
+    "maximumMinutes": 15,
+    "scope": "只适用于临时 Session 密文、一次性接收私钥和封装后的每单数据密钥",
+    "excluded": [
+      "服务主密钥",
+      "订单邮箱",
+      "金额和套餐",
+      "付款与充值状态",
+      "时间和审计事件",
+      "优惠券与邀请记录",
+      "通知记录"
+    ]
+  },
+  "controls": [
+    {
+      "name": "浏览器加密",
+      "detail": "浏览器使用新的 AES-256-GCM 密钥加密 Session，并用短时 RSA-OAEP 公钥封装数据密钥。"
+    },
+    {
+      "name": "输入最小化",
+      "detail": "服务打开加密信封后解析输入，只将规范化的 sessionToken 写入临时保险库，并覆写原始输入缓冲区；账号邮箱作为订单元数据另行保存。"
+    },
+    {
+      "name": "一次性接收",
+      "detail": "接收私钥短时有效，加密信封被接受时通过原子操作取出并消耗。"
+    },
+    {
+      "name": "临时 Session 存储",
+      "detail": "Session 密文以最长 15 分钟 TTL 存入不启用 RDB、AOF 且没有持久数据卷的独立 Redis。"
+    },
+    {
+      "name": "存储隔离",
+      "detail": "Session 存储、持久任务队列和 PostgreSQL 订单记录彼此分离；长期订单存储没有 Session Token、Session 明文或 Session 密文字段。"
+    },
+    {
+      "name": "日志边界",
+      "detail": "应用安全事件记录事件名、状态码和不可逆指纹，不记录原始登录 Session。"
+    },
+    {
+      "name": "显式清理",
+      "detail": "完成和失败路径删除临时 Session 材料，并关闭该订单的浏览器进程与 Context。"
+    },
+    {
+      "name": "执行隔离",
+      "detail": "每次执行启动新的浏览器进程与 Context，持久任务队列只传订单标识，不传登录 Session；不声称每单采用容器隔离。"
+    }
+  ],
+  "limitations": [
+    "第一方披露不是独立审计，也不能证明某一笔生产数据已在某一时刻删除。",
+    "授权存在期间，基础设施特权人员理论上可能检查运行内存或临时存储。",
+    "服务主密钥与仍然有效的临时保险库记录同时泄露时，可能还原对应 Session；服务主密钥不会按每笔订单删除。",
+    "15 分钟规则不适用于业务记录或全部网络元数据。",
+    "删除本站副本不会撤销 ChatGPT 官方登录状态。"
+  ],
+  "credentialInput": {
+    "accepted": [
+      "含 sessionToken 与 user.email 的 ChatGPT 官方会话接口 JSON"
+    ],
+    "notRequested": [
+      "浏览器 Profile",
+      "Cookie 数组",
+      "localStorage",
+      "sessionStorage",
+      "IndexedDB",
+      "Service Worker 状态",
+      "扩展状态"
+    ],
+    "temporaryVaultPayload": [
+      "sessionToken"
+    ],
+    "durableOrderMetadata": [
+      "邮箱"
+    ],
+    "accessTokenOnlyAccepted": false
+  },
+  "keyHierarchy": {
+    "browserEnvelope": "新的 AES-256-GCM 数据密钥，并由短时 RSA-OAEP 公钥封装。",
+    "temporaryVault": "新的每单数据密钥；写入无持久化 Redis 前，由服务主密钥封装该数据密钥。",
+    "serviceMasterKey": "保留时间更长的受限运行配置，不属于 15 分钟规则，也不存入 PostgreSQL、持久队列或 Session Redis。",
+    "explicitRisk": "服务主密钥与仍然有效的临时保险库记录同时泄露时，可能还原对应 Session。"
+  }
+}

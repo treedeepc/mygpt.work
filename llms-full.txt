@@ -44,7 +44,7 @@ The original browser can query its orders directly. After changing browsers or c
 
 ## Privacy and security
 
-The login session is sensitive. It is encrypted in the browser before submission and used only for the specified order's account verification and subscription operation. Server-side session ciphertext and keys are retained for at most 15 minutes. Temporary browser sessions are cleaned after the flow ends. Emails never contain login sessions. Public machine-readable content contains no customer emails, order records, coupon codes, OTPs, login sessions, admin credentials, or production configuration.
+The login session is sensitive. The public form reads `sessionToken` and `user.email` from the official ChatGPT session-endpoint JSON; it does not request a browser profile, cookie array, localStorage, sessionStorage, or IndexedDB. The browser encrypts the input before submission. After decryption, only the normalized `sessionToken` enters a dedicated temporary vault for at most 15 minutes; the original input buffer is overwritten, while the email is retained separately as order metadata. Each execution uses a fresh browser process and context, and the durable queue carries only an order identifier. Temporary browser sessions are cleaned after the flow ends. No per-order container isolation or independent security audit is claimed. Emails never contain login sessions. Public machine-readable content contains no customer emails, order records, coupon codes, OTPs, login sessions, admin credentials, or production configuration.
 
 ## Limitations
 

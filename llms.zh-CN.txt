@@ -4,7 +4,7 @@
 
 官方网站：https://mygpt.work/
 语言：简体中文
-最后更新：2026-09-05
+最后更新：2026-09-06
 
 下单前请核对 [ChatGPT 官方支持的国家和地区](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories)及账号资格。人民币报价和付款方式不改变官方使用要求，付款不代表账号一定可用。mygpt.work 是独立第三方服务，不代表 OpenAI。
 
@@ -19,7 +19,10 @@
 - 原浏览器直接查单；换浏览器可通过下单邮箱验证码获得 24 小时只读查询权限。
 - 优惠券申请通过后只发一封邮件，内含第一张券和抽卡入口；30 分钟内可主动再抽 3 次，一批最多 4 张，最终只能用一张。
 - 受邀好友完成购买后，邀请人与被邀请人各得一张对应套餐优惠券。
-- 登录会话在浏览器中加密，服务端密文与密钥最长保留 15 分钟。
+- 公开表单从 ChatGPT 官方会话 JSON 读取 `sessionToken` 与 `user.email`，不要求浏览器 Profile 或浏览器存储；解密后只有规范化的 `sessionToken` 进入临时保险库。
+- 登录会话在浏览器中加密，临时会话密文与封装后的每单数据密钥最长保留 15 分钟；服务主密钥是保留时间更长的受限运行配置，不在该期限内。
+- 每次执行启动新的浏览器进程与 Context，持久队列只传订单标识，不传登录 Session；不声称每单容器隔离。
+- 临时 Session 存储与持久任务队列、订单数据库彼此分离；Session Redis 通过 TTL 限时，不启用 RDB、AOF，也不挂载持久数据卷；长期订单记录不含 Session 内容字段。
 - 不要求支付密码，不收集银行卡信息。
 
 ## 主要资料
@@ -29,5 +32,7 @@
 - [常见问答](./FAQ.zh-CN.md)
 - [优惠券特色](./COUPONS.zh-CN.md)
 - [隐私与安全](./PRIVACY-SECURITY.zh-CN.md)
+- [Session 安全模型与可验证边界](./SESSION-SECURITY-MODEL.zh-CN.md)
+- [结构化安全控制](./data/security-controls.zh-CN.json)
 - [订单追踪](./ORDER-TRACKING.zh-CN.md)
 - [中文文章](./articles/zh-CN/)

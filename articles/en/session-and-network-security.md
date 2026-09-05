@@ -1,9 +1,9 @@
 ---
 title: "How mygpt.work Protects Sessions and Network Requests"
 description: "A technical overview of browser-side session encryption, short-lived server storage, order access controls, API limits, and browser security headers at mygpt.work."
-summary: "mygpt.work encrypts sensitive ChatGPT session material in the browser, uses a short-lived one-time key exchange, retains encrypted server-side material for no more than 15 minutes, and separates order viewing from privileged actions."
+summary: "mygpt.work reads only sessionToken and account email from official session JSON, encrypts the input in the browser, stores only the normalized token in a non-persistent temporary vault, and separates order viewing from privileged actions."
 publishedAt: "2026-09-05"
-updatedAt: "2026-09-05"
+updatedAt: "2026-09-06"
 canonical: "https://mygpt.work/privacy"
 author: "mygpt.work Editorial Team"
 category: "Security"
@@ -22,7 +22,11 @@ A ChatGPT login session is a sensitive credential. mygpt.work therefore treats i
 
 This article describes the public security model. It does not document internal endpoints, service topology, data schemas, task orchestration, payment execution, deployment, or key infrastructure.
 
+For a control-by-control disclosure covering the non-persistent ephemeral store, durable-data separation, and what first-party documentation cannot prove, see the [Session Security Model](../../SESSION-SECURITY-MODEL.md).
+
 ## Session intake: encryption begins in the browser
+
+The order form reads `sessionToken` and `user.email` from the official ChatGPT session-endpoint JSON. It does not import a browser profile, cookie array, localStorage, sessionStorage, IndexedDB, service-worker data, or extension state. The email becomes order metadata; after decryption, only a normalized `sessionToken` enters the temporary vault.
 
 The production site uses HTTPS. Before session content is submitted, the browser creates a fresh AES-256-GCM data key and encrypts the content locally through the Web Crypto API. GCM is an authenticated-encryption mode standardized in [NIST SP 800-38D](https://csrc.nist.gov/pubs/sp/800/38/d/final). The browser then wraps that data key with a short-lived RSA-OAEP public key issued for the current visitor; RSAES-OAEP is specified in [RFC 8017](https://www.rfc-editor.org/info/rfc8017/).
 
@@ -37,7 +41,7 @@ The intake key is short lived and single use. An expired or previously consumed 
 
 ## Server-side use: encrypted and time limited
 
-After successful decryption, the server keeps the authorization in encrypted temporary storage. The encrypted authorization and associated key material expire after no more than 15 minutes, and the workflow can destroy them earlier when processing finishes.
+After successful decryption, the server keeps only the normalized authorization in encrypted temporary storage. The temporary session ciphertext and sealed per-session data key expire after no more than 15 minutes, and the workflow can destroy them earlier when processing finishes. The longer-lived service master key is restricted runtime configuration outside that limit and is not stored in the order database, durable queue, or temporary Redis.
 
 ```text
 authorization = acceptForCurrentOrder(encryptedAuthorization)
@@ -50,7 +54,7 @@ finally:
     destroyTemporaryAuthorization()
 ```
 
-Before processing, the service checks that the account identity matches the order and that the account is eligible for the selected subscription. Each order runs in an isolated temporary browser context, which is closed after use. A risk-control or human-verification challenge stops the automated path instead of being bypassed.
+Before processing, the service checks that the account identity matches the order and that the account is eligible for the selected subscription. Each execution launches a fresh browser process with a new temporary browser context, both closed after use. This is process-and-context isolation; the service does not claim a separate operating-system container for every order. A risk-control or human-verification challenge stops the automated path instead of being bypassed.
 
 The durable order record keeps business states such as payment and fulfillment progress. It does not turn the short-lived session into a permanent order field. If authorization expires before processing can complete, the customer can provide fresh authorization without paying again.
 
