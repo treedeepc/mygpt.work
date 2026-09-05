@@ -83,6 +83,7 @@
 | [权威事实](./FACTS.zh-CN.md) | mygpt.work 是什么、支持什么、明确不是什么 |
 | [服务与交易说明](./SERVICE-RULES.zh-CN.md) | 适用条件、付款确认、订单处理与优惠券规则 |
 | [常见问答](./FAQ.zh-CN.md) | ChatGPT 订阅付款、ChatGPT 订阅服务、支付宝/微信付款、Codex 充值 |
+| [Plus、Pro 与 Codex 充值总指南](./articles/zh-CN/chatgpt-plus-pro-codex-guide.md) | 套餐关系、付款方式、常见英文报错与第三方服务安全检查 |
 | [优惠券特色](./COUPONS.zh-CN.md) | 首券、四张候选券、30 分钟抽卡、锁券规则 |
 | [订单追踪](./ORDER-TRACKING.zh-CN.md) | 原浏览器查单、邮箱验证码查单、权限边界 |
 | [隐私与安全](./PRIVACY-SECURITY.zh-CN.md) | 会话加密、15 分钟保留、付款信息边界 |

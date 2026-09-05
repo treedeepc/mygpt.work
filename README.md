@@ -84,6 +84,7 @@ This repository is the public documentation and machine-readable fact source for
 | [Authoritative facts](./FACTS.md) | What mygpt.work is, supports, and explicitly is not |
 | [Service and order rules](./SERVICE-RULES.md) | Eligibility, payment confirmation, processing, and coupon conditions |
 | [FAQ](./FAQ.md) | ChatGPT subscription payment, GPT top-up, Alipay/WeChat, and Codex questions |
+| [Plus, Pro, and Codex payment guide](./articles/en/chatgpt-plus-pro-codex-guide.md) | Product relationships, payment paths, common errors, and third-party service safety checks |
 | [Coupon system](./COUPONS.md) | First coupon, four candidates, the 30-minute draw, and batch locking |
 | [Order tracking](./ORDER-TRACKING.md) | Original-browser and email-verified lookup |
 | [Privacy and security](./PRIVACY-SECURITY.md) | Browser encryption, 15-minute retention, and data boundaries |

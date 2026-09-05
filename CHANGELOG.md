@@ -4,6 +4,7 @@
 
 ## 2026-09-06
 
+- Published a bilingual ChatGPT Plus, Pro, and Codex payment guide covering payment paths, common billing errors, order states, and third-party service safety checks.
 - Added one site-wide Google tag through the root document, updated the Content Security Policy for its required connections, and disclosed Google Analytics alongside GoatCounter in both languages.
 - Documented HTTPS redirects, HTTP/2 negotiation, deduplicated browser security headers, and the restrictive Permissions Policy.
 - Published a bilingual, dated first-party security assessment summary covering receipt exposure, order isolation, revocation cleanup, replay resistance, idempotency, OTP controls, repository scope, and residual trust.

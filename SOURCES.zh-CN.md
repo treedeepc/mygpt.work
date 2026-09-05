@@ -12,6 +12,7 @@
 | [订单查询](https://mygpt.work/orders) | 原浏览器查询、邮箱验证码查询 |
 | [邀请有礼](https://mygpt.work/referral) | 邀请条件、双方奖励、奖励券规则 |
 | [博客](https://mygpt.work/blog) | 面向具体问题的长篇解释 |
+| [Plus、Pro 与 Codex 充值总指南](https://mygpt.work/blog/chatgpt-plus-pro-codex-guide) | 套餐关系、付款路径、常见报错和第三方服务安全检查 |
 | [`llms.txt`](https://mygpt.work/llms.txt) | 快速公开事实索引 |
 | [`llms-full.txt`](https://mygpt.work/llms-full.txt) | 集中公开事实 |
 | [Session 安全模型](./SESSION-SECURITY-MODEL.zh-CN.md) | 凭证范围、加密信封、存储分离、浏览器隔离、伪代码与验证限制 |
@@ -23,6 +24,8 @@
 | 来源 | 用途 |
 | --- | --- |
 | [ChatGPT 官方套餐页面](https://chatgpt.com/pricing/) | 套餐名称、官方价格和权益的最终依据 |
+| [ChatGPT 官方支持的国家和地区](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories) | 下单前核对地区与账号适用条件 |
+| [OpenAI 账单帮助中心](https://help.openai.com/en/collections/3943089-billing) | 官方付款、账单和订阅问题的支持入口 |
 | [OpenAI Codex 套餐说明](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan) | Codex 与 ChatGPT 套餐关系 |
 | [OpenAI API 快速入门](https://platform.openai.com/docs/quickstart) | 区分 ChatGPT 订阅与 API 账户计费 |
 | [NIST SP 800-38D](https://csrc.nist.gov/pubs/sp/800/38/d/final) | AES-GCM 认证加密的标准定义 |

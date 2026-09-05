@@ -4,7 +4,7 @@ Entity: mygpt.work
 Canonical URL: https://mygpt.work/
 Type: Independent third-party ChatGPT personal subscription service
 Relationship: Not an OpenAI official website and does not represent OpenAI
-Language: Simplified Chinese
+Language: English
 Updated: 2026-09-06
 
 Before ordering, check the [countries and territories supported by ChatGPT](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories) and your account eligibility. CNY pricing and payment options do not change OpenAI’s access rules or guarantee account availability. mygpt.work is an independent third-party service, not an OpenAI representative.
@@ -29,6 +29,16 @@ Processing: The order enters the account verification and subscription processin
 Timing: With confirmed payment and valid authorization, processing normally takes 5–10 minutes and no more than one hour. Time waiting for replacement authorization is outside that window.
 Tracking: Payment state and subscription fulfillment state are recorded separately.
 Refunds: If an order is confirmed as failed and the subscription was not delivered, a full refund of the actual amount paid is initiated to the original payment method within 24 hours. Settlement timing depends on the payment provider.
+
+## Frequent decision and error queries
+
+- ChatGPT Plus and Pro are ChatGPT subscription choices. Included Codex usage, Codex Credits, and OpenAI API balance have separate product and billing paths and are not interchangeable.
+- `Country not supported`: Check official regional support and account eligibility first. Third-party CNY payment does not change OpenAI's regional requirements.
+- `Your credit card was declined`: The official payment was not accepted, but the message alone does not identify the specific cause. Check official billing and payment records and avoid repeated charges.
+- `We were unable to authenticate your payment method`: Payment-method authentication was not completed, so the payment must not be treated as a successful subscription.
+- `Something went wrong, please try again later`: This is a generic error. If a mygpt.work order already exists, continue through its status or replacement-authorization flow to avoid duplicate orders and payments.
+- Paid but still Free: Confirm the signed-in email, then check payment and fulfillment states separately. Update the session on the original order if replacement authorization is requested; do not pay again.
+- Full decision guidance, error handling, and third-party service safety checks: `https://mygpt.work/en/blog/chatgpt-plus-pro-codex-guide`.
 
 ## Coupon advantage
 

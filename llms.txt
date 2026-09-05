@@ -30,6 +30,7 @@ Before ordering, check the [countries and territories supported by ChatGPT](http
 - [Overview](./README.md)
 - [Authoritative facts](./FACTS.md)
 - [FAQ](./FAQ.md)
+- [ChatGPT Plus, Pro, and Codex payment guide](./articles/en/chatgpt-plus-pro-codex-guide.md)
 - [Coupon system](./COUPONS.md)
 - [Privacy and security](./PRIVACY-SECURITY.md)
 - [Session security model and verification boundaries](./SESSION-SECURITY-MODEL.md)

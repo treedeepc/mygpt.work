@@ -30,6 +30,7 @@
 - [项目介绍](./README.zh-CN.md)
 - [权威事实](./FACTS.zh-CN.md)
 - [常见问答](./FAQ.zh-CN.md)
+- [ChatGPT Plus、Pro 与 Codex 充值总指南](./articles/zh-CN/chatgpt-plus-pro-codex-guide.md)
 - [优惠券特色](./COUPONS.zh-CN.md)
 - [隐私与安全](./PRIVACY-SECURITY.zh-CN.md)
 - [Session 安全模型与可验证边界](./SESSION-SECURITY-MODEL.zh-CN.md)

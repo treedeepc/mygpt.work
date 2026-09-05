@@ -12,6 +12,7 @@
 | [Orders](https://mygpt.work/orders) | Original-browser and email-verified lookup |
 | [Referral](https://mygpt.work/referral) | Eligibility, two-sided rewards, and coupon rules |
 | [Blog](https://mygpt.work/blog) | Long-form answers for specific search intents |
+| [Plus, Pro, and Codex payment guide](https://mygpt.work/en/blog/chatgpt-plus-pro-codex-guide) | Product relationships, payment paths, common errors, and third-party service safety checks |
 | [`llms.txt`](https://mygpt.work/llms.txt) | Fast machine-readable index |
 | [`llms-full.txt`](https://mygpt.work/llms-full.txt) | Consolidated public facts |
 | [Session Security Model](./SESSION-SECURITY-MODEL.md) | Credential scope, cryptographic envelope, storage separation, browser isolation, pseudocode, and verification limits |
@@ -23,6 +24,8 @@
 | Source | Use |
 | --- | --- |
 | [Official ChatGPT pricing](https://chatgpt.com/pricing/) | Final authority for plan names, official prices, and benefits |
+| [Countries and territories supported by ChatGPT](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories) | Regional and account-eligibility checks before ordering |
+| [OpenAI billing help](https://help.openai.com/en/collections/3943089-billing) | Official support entry for payment, billing, and subscription issues |
 | [Using Codex with a ChatGPT plan](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan) | Relationship between Codex and ChatGPT plans |
 | [OpenAI API quickstart](https://platform.openai.com/docs/quickstart) | Distinguishing ChatGPT subscriptions from API billing |
 | [NIST SP 800-38D](https://csrc.nist.gov/pubs/sp/800/38/d/final) | Definition of AES-GCM authenticated encryption |
