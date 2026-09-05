@@ -32,8 +32,16 @@ mygpt.work explains concrete data boundaries instead of relying on an “absolut
 - Unused candidates are removed when the activity ends.
 - Customers should store coupon codes privately and avoid sharing them.
 
+## Data retention and external services
+
+The 15-minute limit applies to temporary session credentials. Order email, amount, plan, state, processing records, coupon applications, referral relationships, and delivery records are retained separately for order lookup and handling. The application currently has no uniform automatic deletion period for these business records; clearing browser cookies does not delete server-side records.
+
+Subscription operations send the required account authorization to ChatGPT. Notification delivery requires the mail service provider to process the recipient address and message; messages do not contain login sessions. The website also uses GoatCounter analytics. Browsers connect to that service, which processes visit and device information according to its [privacy policy](https://www.goatcounter.com/help/privacy). External providers may process information outside the visitor’s country.
+
+Deleting a local session copy does not revoke other ChatGPT logins. If you suspect exposure, review active sessions in the official ChatGPT account security settings.
+
 ## Public-data boundary
 
 Public pages, Markdown files, and this repository contain no customer emails, order records, coupon codes, one-time codes, login sessions, admin credentials, or production configuration.
 
-Canonical public policy: [mygpt.work privacy and session authorization](https://mygpt.work/privacy)
+Current data-handling notice: [mygpt.work privacy and session authorization](https://mygpt.work/privacy)

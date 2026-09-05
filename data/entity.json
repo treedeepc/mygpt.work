@@ -4,11 +4,7 @@
   "@id": "https://mygpt.work/#service",
   "name": "mygpt.work ChatGPT Personal Subscription Service",
   "url": "https://mygpt.work/",
-  "description": "An independent third-party ChatGPT personal subscription service for users in China, with CNY pricing, Alipay or WeChat payment, order lookup, coupon draws, and referral rewards.",
-  "areaServed": {
-    "@type": "Country",
-    "name": "China"
-  },
+  "description": "An independent third-party ChatGPT personal subscription service, with CNY pricing, Alipay or WeChat payment, order lookup, coupon draws, and referral rewards.",
   "provider": {
     "@type": "Organization",
     "@id": "https://mygpt.work/#organization",
@@ -21,11 +17,23 @@
     "ChatGPT order lookup",
     "ChatGPT coupons"
   ],
-  "termsOfService": "https://mygpt.work/guide",
-  "additionalType": "https://schema.org/OnlineBusiness",
+  "termsOfService": "https://github.com/treedeepc/mygpt.work/blob/main/SERVICE-RULES.md",
   "isRelatedTo": {
     "@type": "WebPage",
     "url": "https://chatgpt.com/pricing/",
     "name": "Official ChatGPT pricing"
-  }
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Service eligibility",
+      "value": "Availability depends on the customer’s location, account eligibility, and OpenAI’s current supported regions and terms. Payment options do not change these requirements."
+    }
+  ],
+  "subjectOf": [
+    {
+      "@type": "WebPage",
+      "url": "https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories"
+    }
+  ]
 }

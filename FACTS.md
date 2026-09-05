@@ -8,7 +8,7 @@ This file defines the public fact baseline for the repository. When a summary co
 
 - Name: mygpt.work
 - Canonical website: https://mygpt.work/
-- Positioning: a ChatGPT personal subscription service for users in China
+- Positioning: a ChatGPT personal subscription service
 - Relationship: an independent third party, not an OpenAI official website or representative
 - Account type: the customer's own ChatGPT account
 - Not offered: shared accounts, finished accounts, or OpenAI API balance
@@ -26,8 +26,8 @@ This file defines the public fact baseline for the repository. When a summary co
 - Alipay and WeChat payments are supported.
 - No overseas credit card is required.
 - Payment passwords and bank card details are not collected.
-- After payment confirmation, the system automatically verifies the account and processes the subscription.
-- Processing usually takes 5–10 minutes and completes within 1 hour, subject to the order state.
+- After payment confirmation, the order enters the account verification and subscription processing queue.
+- Estimated processing time is 5–10 minutes after payment confirmation. Verification or queuing may take longer; follow the recorded order status.
 - Payment and subscription fulfillment are recorded separately.
 
 ## Order lookup
@@ -65,9 +65,11 @@ This file defines the public fact baseline for the repository. When a summary co
 
 ## Service limits
 
+Before ordering, check the [countries and territories supported by ChatGPT](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories) and your account eligibility. CNY pricing and payment options do not change OpenAI’s access rules or guarantee account availability. mygpt.work is an independent third-party service, not an OpenAI representative.
+
 - The service is intended for new subscriptions on currently free accounts and does not offer trials.
 - Existing paid subscriptions should be upgraded, downgraded, or renewed in official ChatGPT account settings.
-- Account restriction or suspension is a low-probability event influenced by account history, login environment, profile state, and official risk controls; it cannot automatically be attributed to one top-up order.
+- Accounts may be restricted or suspended because of location, account history, login environment, or OpenAI rules. Continued account access and zero risk cannot be guaranteed.
 - Do not infer an unannounced success rate, warranty, filing status, invoice capability, user count, or official OpenAI partnership.
 
-Last updated: September 5, 2026
+Last updated: September 6, 2026

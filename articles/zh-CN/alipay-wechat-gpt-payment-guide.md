@@ -1,9 +1,9 @@
 ---
 title: "支付宝充值 GPT、微信充值 GPT：付款与到账说明"
 description: "说明支付宝充值 GPT 和微信充值 GPT 的付款流程、付款状态与充值状态的区别，以及付款后未生效时该怎么处理。"
-summary: "本站支持支付宝和微信付款。用户先创建人民币订单并核对实际付款金额，再按订单说明付款；确认到账后系统自动处理充值，付款状态和充值状态分别更新。"
+summary: "本站支持支付宝和微信付款。用户先创建人民币订单并核对实际付款金额，再按订单说明付款；确认到账后订单进入订阅处理队列，付款状态和充值状态分别更新。"
 publishedAt: "2026-09-05"
-updatedAt: "2026-09-05"
+updatedAt: "2026-09-06"
 canonical: "https://mygpt.work/blog/alipay-wechat-gpt-payment-guide"
 author: "mygpt.work 编辑部"
 category: "付款说明"
@@ -16,7 +16,11 @@ keywords:
 
 [English](../en/alipay-wechat-gpt-payment-guide.md)
 
-mygpt.work 支持支付宝和微信付款。先创建人民币订单并确认金额，再按照订单页面的收款说明付款；确认到账后，系统会自动进入充值流程。
+mygpt.work 支持支付宝和微信付款。先创建人民币订单并确认金额，再按照订单页面的收款说明付款；确认到账后，订单进入订阅处理队列。
+
+## 下单前确认适用条件
+
+下单前请核对 [ChatGPT 官方支持的国家和地区](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories)及账号资格。人民币报价和付款方式不改变官方使用要求，付款不代表账号一定可用。mygpt.work 是独立第三方服务，不代表 OpenAI。
 
 ## 支付宝或微信付款前先核对三项
 
@@ -29,7 +33,7 @@ mygpt.work 支持支付宝和微信付款。先创建人民币订单并确认金
 1. 在首页选择套餐，提交本人账号信息并创建订单。
 2. 确认订单号、套餐和实际付款金额。
 3. 按订单页面的收款说明使用支付宝付款。
-4. 付款状态更新后，系统自动进入充值处理。
+4. 付款状态更新后，订单进入订阅处理队列。
 
 ## 微信充值 GPT 的步骤
 
@@ -39,10 +43,10 @@ mygpt.work 支持支付宝和微信付款。先创建人民币订单并确认金
 
 “已付款”表示收款已确认；“充值成功”表示系统完成账号核验和订阅处理。两者之间可能出现“等待系统处理”“充值处理中”“待补充授权”或“待人工安全复核”等状态。
 
-充值通常在付款后 5～10 分钟到账，最晚 1 小时内完成。如果会话过期，只需在原订单补充本人账号的新会话，已经确认的付款不会要求再付一次。
+付款确认后预计 5～10 分钟完成；核验或排队可能延长处理时间。如果会话过期，只需在原订单补充本人账号的新会话，已经确认的付款不会要求再付一次。
 
 ## 付款后仍显示 Free 怎么办
 
 先查看原订单，不要重复付款或重新下单。订单显示需要补充授权时，按页面提示更新会话；显示待人工安全复核时，会进一步核对官方订阅与账单。最终结果以 ChatGPT 账号内实际显示的订阅状态为准。
 
-需要了解完整下单流程，可阅读[国内怎么充值 ChatGPT](https://mygpt.work/blog/chatgpt-domestic-recharge-guide)和[mygpt.work 订阅流程说明](https://mygpt.work/blog/how-mygpt-work-subscription-works)。
+需要了解完整下单流程，可阅读[如何完成 ChatGPT 订阅付款](https://mygpt.work/blog/chatgpt-domestic-recharge-guide)和[mygpt.work 订阅流程说明](https://mygpt.work/blog/how-mygpt-work-subscription-works)。

@@ -4,6 +4,7 @@
 
 ## 2026-09-06
 
+- Clarified service eligibility, payment confirmation, estimated processing times, and data retention across the bilingual documentation.
 - Added a clean homepage screenshot and licensed the repository's original material under CC BY 4.0.
 
 ## 2026-09-05

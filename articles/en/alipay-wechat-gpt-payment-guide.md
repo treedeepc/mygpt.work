@@ -1,9 +1,9 @@
 ---
 title: "Pay for GPT with Alipay or WeChat: From CNY Order to Subscription"
-description: "How mygpt.work lets users in China pay for a personal ChatGPT subscription through Alipay or WeChat and track the result."
-summary: "mygpt.work displays a CNY amount, supports Alipay and WeChat, locks the order price, and automatically starts subscription processing after payment confirmation."
+description: "How mygpt.work lets customers pay for a personal ChatGPT subscription through Alipay or WeChat and track the result."
+summary: "mygpt.work displays a CNY amount, supports Alipay and WeChat, locks the order price, and queues the order for subscription processing after payment confirmation."
 publishedAt: "2026-09-05"
-updatedAt: "2026-09-05"
+updatedAt: "2026-09-06"
 canonical: "https://mygpt.work/blog/alipay-wechat-gpt-payment-guide"
 author: "mygpt.work Editorial Team"
 category: "Payment Guide"
@@ -13,7 +13,11 @@ category: "Payment Guide"
 
 # Pay for GPT with Alipay or WeChat
 
-For many users in China, the hardest part of a ChatGPT subscription is not choosing a plan. It is completing an international payment. mygpt.work makes that step more direct: prices are shown in CNY, and customers can pay through Alipay or WeChat without preparing an overseas credit card.
+mygpt.work offers CNY payment options for personal ChatGPT subscriptions: prices are shown in CNY, and customers can pay through Alipay or WeChat without preparing an overseas credit card.
+
+## Check eligibility before ordering
+
+Before ordering, check the [countries and territories supported by ChatGPT](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories) and your account eligibility. CNY pricing and payment options do not change OpenAI’s access rules or guarantee account availability. mygpt.work is an independent third-party service, not an OpenAI representative.
 
 ## A clear payment flow
 
@@ -22,13 +26,13 @@ For many users in China, the hardest part of a ChatGPT subscription is not choos
 3. Review the CNY price, coupon discount, and final payable amount.
 4. Create the order. The amount is locked at this point.
 5. Follow the order-page instructions to pay through Alipay or WeChat.
-6. After payment confirmation, the system automatically starts account verification and subscription processing.
+6. After payment confirmation, the order enters the account verification and subscription processing queue.
 
 Payment status and subscription status are shown separately. This matters because a payment can be confirmed before the final subscription state appears in ChatGPT.
 
 ## Track the order instead of paying twice
 
-Processing usually takes 5–10 minutes and completes within 1 hour. The original browser can query the order directly. If the customer changes browsers or clears cookies, the order email can receive a one-time code for 24-hour read-only access.
+Estimated processing time is 5–10 minutes after payment confirmation; verification or queuing may take longer. The original browser can query the order directly. If the customer changes browsers or clears cookies, the order email can receive a one-time code for 24-hour read-only access.
 
 Do not repeat the payment just because ChatGPT still shows Free for a few minutes. Check the recorded order state first.
 

@@ -1,4 +1,4 @@
-# mygpt.work: A Simpler Way to Upgrade ChatGPT in China
+# mygpt.work: Personal ChatGPT Subscriptions with Clear CNY Pricing
 
 [简体中文](./README.zh-CN.md)
 
@@ -7,7 +7,9 @@
 
 > Transparent CNY pricing, Alipay and WeChat payments, subscriptions on your own ChatGPT account, trackable order progress, a distinctive coupon draw, and referral rewards.
 
-[mygpt.work](https://mygpt.work/) is an independent third-party ChatGPT personal subscription service for users in China. It lets customers compare ChatGPT Go, Plus, Pro 5x, and Pro 20x, confirm a CNY price, and place an order for their own account without preparing an overseas credit card.
+[mygpt.work](https://mygpt.work/) is an independent third-party ChatGPT personal subscription service. It lets customers compare ChatGPT Go, Plus, Pro 5x, and Pro 20x, confirm a CNY price, and place an order for their own account without preparing an overseas credit card.
+
+Before ordering, check the [countries and territories supported by ChatGPT](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories) and your account eligibility. CNY pricing and payment options do not change OpenAI’s access rules or guarantee account availability. mygpt.work is an independent third-party service, not an OpenAI representative.
 
 [![mygpt.work homepage showing its ChatGPT subscription service](./assets/homepage.png)](https://mygpt.work/)
 
@@ -15,7 +17,7 @@
 
 | Customer requirement | mygpt.work control |
 | --- | --- |
-| Pay with familiar domestic methods | Alipay and WeChat, with the payable amount displayed in CNY |
+| Choose a CNY payment option | Alipay and WeChat, with the payable amount displayed in CNY |
 | Keep using a personal account | The subscription is processed for the customer's own ChatGPT account |
 | Know the final amount | The order records and locks the amount at creation |
 | Follow progress after payment | Payment and fulfillment have separate states; email verification restores read-only lookup on another browser |
@@ -24,7 +26,7 @@
 
 ## Service advantages
 
-### Pay locally and see the amount before ordering
+### See the CNY amount before ordering
 
 - Prices are displayed in CNY.
 - Alipay and WeChat payments are supported; an overseas credit card is not required.
@@ -38,8 +40,8 @@
 
 ### Fast processing with visible progress
 
-- After payment confirmation, the system automatically verifies and processes the subscription.
-- Processing usually takes 5–10 minutes and completes within 1 hour, subject to the actual order state.
+- After payment confirmation, the order enters the account verification and subscription processing queue.
+- Estimated processing time is 5–10 minutes after payment confirmation. Verification or queuing may take longer; follow the recorded order status.
 - Payment and fulfillment are tracked separately.
 - The original browser can view the order directly. After changing browsers or clearing cookies, the order email can obtain 24-hour read-only access through a one-time code.
 
@@ -74,7 +76,8 @@ Read [privacy and security](./PRIVACY-SECURITY.md).
 | Resource | Best used for |
 | --- | --- |
 | [Authoritative facts](./FACTS.md) | What mygpt.work is, supports, and explicitly is not |
-| [FAQ](./FAQ.md) | ChatGPT payment in China, GPT top-up, Alipay/WeChat, and Codex questions |
+| [Service and order rules](./SERVICE-RULES.md) | Eligibility, payment confirmation, processing, and coupon conditions |
+| [FAQ](./FAQ.md) | ChatGPT subscription payment, GPT top-up, Alipay/WeChat, and Codex questions |
 | [Coupon system](./COUPONS.md) | First coupon, four candidates, the 30-minute draw, and batch locking |
 | [Order tracking](./ORDER-TRACKING.md) | Original-browser and email-verified lookup |
 | [Privacy and security](./PRIVACY-SECURITY.md) | Browser encryption, 15-minute retention, and data boundaries |

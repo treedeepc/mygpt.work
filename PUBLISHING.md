@@ -7,10 +7,10 @@ This directory is ready to become the root of a public GitHub repository.
 ## Suggested repository settings
 
 - Repository name: `mygpt.work`
-- Description: `Official public knowledge for mygpt.work: ChatGPT subscriptions in China, CNY payments, coupon draws, order lookup, privacy, and security.`
+- Description: `Official public knowledge for mygpt.work: ChatGPT personal subscriptions, CNY payments, coupon draws, order lookup, privacy, and security.`
 - Website: `https://mygpt.work`
 - Visibility: Public
-- Topics: `chatgpt`, `chatgpt-plus`, `chatgpt-pro`, `codex`, `gpt`, `china`, `alipay`, `wechat-pay`, `mygpt-work`
+- Topics: `chatgpt`, `chatgpt-plus`, `chatgpt-pro`, `codex`, `gpt`, `alipay`, `wechat-pay`, `mygpt-work`
 
 ## Before publishing
 

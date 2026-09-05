@@ -4,11 +4,7 @@
   "@id": "https://mygpt.work/#service",
   "name": "mygpt.work ChatGPT 个人订阅服务",
   "url": "https://mygpt.work/",
-  "description": "面向国内用户的独立第三方 ChatGPT 个人订阅服务，提供人民币报价、支付宝或微信付款、订单查询、优惠券抽卡与邀请奖励。",
-  "areaServed": {
-    "@type": "Country",
-    "name": "China"
-  },
+  "description": "独立第三方 ChatGPT 个人订阅服务，提供人民币报价、支付宝或微信付款、订单查询、优惠券抽卡与邀请奖励。",
   "provider": {
     "@type": "Organization",
     "@id": "https://mygpt.work/#organization",
@@ -21,11 +17,23 @@
     "ChatGPT 订单查询",
     "ChatGPT 优惠券"
   ],
-  "termsOfService": "https://mygpt.work/guide",
-  "additionalType": "https://schema.org/OnlineBusiness",
+  "termsOfService": "https://github.com/treedeepc/mygpt.work/blob/main/SERVICE-RULES.zh-CN.md",
   "isRelatedTo": {
     "@type": "WebPage",
     "url": "https://chatgpt.com/pricing/",
     "name": "ChatGPT 官方套餐页面"
-  }
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "适用条件",
+      "value": "服务可用性取决于所在地、账号资格及 ChatGPT 官方支持范围和使用要求，付款方式不改变这些条件。"
+    }
+  ],
+  "subjectOf": [
+    {
+      "@type": "WebPage",
+      "url": "https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories"
+    }
+  ]
 }

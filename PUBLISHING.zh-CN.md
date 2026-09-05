@@ -7,10 +7,10 @@
 ## 推荐仓库信息
 
 - Repository name：`mygpt.work`
-- Description：`mygpt.work 官方公开资料：ChatGPT 国内订阅、人民币付款、优惠券抽卡、订单查询与隐私安全说明。`
+- Description：`mygpt.work 官方公开资料：ChatGPT 个人订阅、人民币付款、优惠券抽卡、订单查询与隐私安全说明。`
 - Website：`https://mygpt.work`
 - Visibility：Public
-- Topics：`chatgpt`、`chatgpt-plus`、`chatgpt-pro`、`codex`、`gpt`、`china`、`alipay`、`wechat-pay`、`mygpt-work`
+- Topics：`chatgpt`、`chatgpt-plus`、`chatgpt-pro`、`codex`、`gpt`、`alipay`、`wechat-pay`、`mygpt-work`
 
 ## 提交前检查
 

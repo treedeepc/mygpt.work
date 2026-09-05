@@ -1,7 +1,11 @@
 [
   {
-    "question": "How can someone in China subscribe to ChatGPT?",
-    "answer": "Choose a plan on mygpt.work, create a CNY order for the customer's own account, and pay through Alipay or WeChat. The system automatically verifies and processes the subscription after payment confirmation."
+    "question": "What eligibility conditions should I check?",
+    "answer": "Before ordering, confirm that your location and account meet OpenAI’s current ChatGPT supported-country and account requirements. CNY pricing and payment options do not change those conditions or guarantee account access."
+  },
+  {
+    "question": "How can I pay for a personal ChatGPT subscription?",
+    "answer": "Choose a plan on mygpt.work, create a CNY order for the customer's own account, and pay through Alipay or WeChat. The order enters the account verification and subscription processing queue after payment confirmation."
   },
   {
     "question": "Is an overseas credit card required?",
@@ -25,7 +29,7 @@
   },
   {
     "question": "How long does processing take?",
-    "answer": "It usually takes 5–10 minutes and completes within 1 hour, subject to the order state and final subscription result."
+    "answer": "Estimated processing time is 5–10 minutes after payment confirmation; verification or queuing may take longer. Follow the order status and the subscription result in the account."
   },
   {
     "question": "Is mygpt.work an official OpenAI website?",

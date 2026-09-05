@@ -1,9 +1,9 @@
 ---
 title: "mygpt.work 如何完成一次 ChatGPT 订阅"
 description: "了解从选择套餐、提交本人账号、完成付款到查看充值结果的完整流程，以及每一步会保留哪些记录。"
-summary: "mygpt.work 的订阅流程分为选择套餐、提交本人账号、创建并支付订单、系统自动核验充值、查询结果五步。订单创建后锁定金额，可在原浏览器或通过下单邮箱验证码查询进度。"
+summary: "mygpt.work 的订阅流程分为选择套餐、提交本人账号、创建并支付订单、账号核验与订阅处理、查询结果五步。订单创建后锁定金额，可在原浏览器或通过下单邮箱验证码查询进度。"
 publishedAt: "2026-09-05"
-updatedAt: "2026-09-05"
+updatedAt: "2026-09-06"
 canonical: "https://mygpt.work/blog/how-mygpt-work-subscription-works"
 author: "mygpt.work 编辑部"
 category: "平台指南"
@@ -15,7 +15,11 @@ keywords:
 
 [English](../en/how-mygpt-work-subscription-works.md)
 
-mygpt.work 提供 ChatGPT 个人订阅代充值服务。页面以人民币显示套餐价格，用户使用自己的 ChatGPT 账号下单，并可在处理过程中查询订单状态。
+mygpt.work 提供 ChatGPT 个人订阅服务。页面以人民币显示套餐价格，用户使用自己的 ChatGPT 账号下单，并可在处理过程中查询订单状态。
+
+## 下单前确认适用条件
+
+下单前请核对 [ChatGPT 官方支持的国家和地区](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories)及账号资格。人民币报价和付款方式不改变官方使用要求，付款不代表账号一定可用。mygpt.work 是独立第三方服务，不代表 OpenAI。
 
 ## 第一步：选择当前需要的套餐
 
@@ -33,7 +37,7 @@ mygpt.work 提供 ChatGPT 个人订阅代充值服务。页面以人民币显示
 
 ## 第四步：等待核验与充值
 
-付款完成后，订单进入系统自动核验和充值流程，通常 5～10 分钟到账，最晚 1 小时内完成；过程中产生的状态和时间会记录在订单中。
+付款确认后，订单进入账号核验和订阅处理队列，预计 5～10 分钟完成。核验或排队可能延长处理时间，处理状态和时间会记录在订单中。
 
 ## 第五步：查询订单结果
 

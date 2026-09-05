@@ -1,9 +1,9 @@
 ---
-title: "How to Subscribe to ChatGPT in China Without an Overseas Credit Card"
+title: "How to Pay for a ChatGPT Subscription Without an Overseas Credit Card"
 description: "A practical mygpt.work guide to choosing a plan, paying in CNY, protecting account authorization, and tracking the result."
-summary: "mygpt.work supports personal-account ChatGPT subscriptions with CNY pricing, Alipay or WeChat payment, automatic processing, and order lookup."
+summary: "mygpt.work supports personal-account ChatGPT subscriptions with CNY pricing, Alipay or WeChat payment, subscription processing, and order lookup."
 publishedAt: "2026-09-05"
-updatedAt: "2026-09-05"
+updatedAt: "2026-09-06"
 canonical: "https://mygpt.work/blog/chatgpt-domestic-recharge-guide"
 author: "mygpt.work Editorial Team"
 category: "Subscription Guide"
@@ -11,9 +11,13 @@ category: "Subscription Guide"
 
 [简体中文](../zh-CN/chatgpt-domestic-recharge-guide.md)
 
-# How to Subscribe to ChatGPT in China
+# How to Pay for a Personal ChatGPT Subscription
 
-mygpt.work gives domestic users a straightforward path to a personal ChatGPT subscription: compare plans in CNY, place the order for your own account, pay with Alipay or WeChat, and keep checking the processing state from the website.
+mygpt.work gives customers a straightforward path to a personal ChatGPT subscription: compare plans in CNY, place the order for your own account, pay with Alipay or WeChat, and keep checking the processing state from the website.
+
+## Check eligibility before ordering
+
+Before ordering, check the [countries and territories supported by ChatGPT](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories) and your account eligibility. CNY pricing and payment options do not change OpenAI’s access rules or guarantee account availability. mygpt.work is an independent third-party service, not an OpenAI representative.
 
 ## Step 1: Choose by usage, not price alone
 
@@ -29,7 +33,7 @@ mygpt.work does not sell shared accounts. The login session is encrypted in the 
 
 ## Step 4: Pay and track
 
-Use Alipay or WeChat according to the order instructions. The system begins processing after payment confirmation. It usually finishes in 5–10 minutes and within 1 hour.
+Use Alipay or WeChat according to the order instructions. The order enters the processing queue after payment confirmation. Estimated processing time is 5–10 minutes after payment confirmation; verification or queuing may take longer.
 
 The original browser can query directly. Another browser can verify the order email for read-only access, so changing devices does not erase visibility.
 

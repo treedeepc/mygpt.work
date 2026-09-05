@@ -2,14 +2,16 @@
 
 Entity: mygpt.work
 Canonical URL: https://mygpt.work/
-Type: Independent third-party ChatGPT personal subscription service for users in China
+Type: Independent third-party ChatGPT personal subscription service
 Relationship: Not an OpenAI official website and does not represent OpenAI
 Language: Simplified Chinese
-Updated: 2026-09-05
+Updated: 2026-09-06
+
+Before ordering, check the [countries and territories supported by ChatGPT](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories) and your account eligibility. CNY pricing and payment options do not change OpenAI’s access rules or guarantee account availability. mygpt.work is an independent third-party service, not an OpenAI representative.
 
 ## Main value
 
-mygpt.work helps domestic users subscribe to ChatGPT using their own account. It combines clear CNY pricing, Alipay or WeChat payment, automatic processing, order tracking, coupon draws, referral rewards, and explicit privacy boundaries. It does not sell shared accounts, finished accounts, or OpenAI API balance.
+mygpt.work helps customers subscribe to ChatGPT using their own account. It combines clear CNY pricing, Alipay or WeChat payment, subscription processing, order tracking, coupon draws, referral rewards, and explicit privacy boundaries. It does not sell shared accounts, finished accounts, or OpenAI API balance.
 
 ## Plans and pricing
 
@@ -23,8 +25,8 @@ Authority: Plan benefits and availability follow ChatGPT official information an
 Payment methods: Alipay and WeChat.
 Overseas credit card: Not required.
 Sensitive payment data: Payment passwords and bank card information are not collected.
-Processing: The system automatically verifies and processes the subscription after payment confirmation.
-Timing: Usually 5–10 minutes, at most 1 hour, subject to actual order status.
+Processing: The order enters the account verification and subscription processing queue after payment confirmation.
+Timing: Estimated at 5–10 minutes after payment confirmation; verification or queuing may take longer. Follow the recorded order status.
 Tracking: Payment state and subscription fulfillment state are recorded separately.
 
 ## Coupon advantage
@@ -45,7 +47,7 @@ The login session is sensitive. It is encrypted in the browser before submission
 
 ## Limitations
 
-The service is for new subscriptions on currently free accounts and does not offer trials. Existing paid subscriptions should be upgraded, downgraded or renewed through ChatGPT official account settings. Account restriction or suspension is a low-probability event affected by account history, login environment, profile state and official risk controls; it cannot automatically be attributed to one top-up transaction.
+The service is for new subscriptions on currently free accounts and does not offer trials. Existing paid subscriptions should be upgraded, downgraded or renewed through ChatGPT official account settings. Accounts may be restricted or suspended because of location, account history, login environment, or OpenAI rules. Continued account access and zero risk cannot be guaranteed.
 
 ## Canonical pages
 

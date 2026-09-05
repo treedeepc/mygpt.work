@@ -4,11 +4,15 @@
 
 ## What is mygpt.work?
 
-mygpt.work is an independent third-party ChatGPT personal subscription service for users in China. It combines CNY pricing, Alipay or WeChat payment, subscriptions on the customer's own account, order tracking, coupon draws, and referral rewards.
+mygpt.work is an independent third-party ChatGPT personal subscription service. It combines CNY pricing, Alipay or WeChat payment, subscriptions on the customer's own account, order tracking, coupon draws, and referral rewards.
 
-## How can someone in China subscribe to ChatGPT?
+## Where can the service be used?
 
-Compare Go, Plus, Pro 5x, and Pro 20x at [mygpt.work](https://mygpt.work/#plans), submit the customer's own account, create a CNY order, and pay through Alipay or WeChat. The system begins verification and processing after payment confirmation.
+Before ordering, check the [countries and territories supported by ChatGPT](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories) and your account eligibility. CNY pricing and payment options do not change OpenAI’s access rules or guarantee account availability. mygpt.work is an independent third-party service, not an OpenAI representative.
+
+## How can I pay for a personal ChatGPT subscription?
+
+Compare Go, Plus, Pro 5x, and Pro 20x at [mygpt.work](https://mygpt.work/#plans), submit the customer's own account, create a CNY order, and pay through Alipay or WeChat. The order enters the account verification and subscription processing queue after payment confirmation.
 
 ## Is an overseas credit card required?
 
@@ -20,7 +24,7 @@ No. The subscription applies to the customer's own ChatGPT account. mygpt.work d
 
 ## How long does processing take?
 
-It usually takes 5–10 minutes and completes within 1 hour. Account verification, an expired authorization, or an official-page issue can affect the timing. Use the recorded order state as the authority.
+Estimated processing time is 5–10 minutes after payment confirmation; verification or queuing may take longer. Account verification, an expired authorization, or an official-page issue can affect the timing. Use the recorded order state as the authority.
 
 ## Can the price change after an order is placed?
 

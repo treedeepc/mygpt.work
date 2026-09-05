@@ -1,17 +1,19 @@
 # mygpt.work
 
-> An independent third-party ChatGPT personal subscription service for users in China, with CNY pricing, Alipay and WeChat payments, personal-account subscriptions, price locking, order tracking, coupon draws, and referral rewards.
+> An independent third-party ChatGPT personal subscription service, with CNY pricing, Alipay and WeChat payments, personal-account subscriptions, price locking, order tracking, coupon draws, and referral rewards.
 
 Official website: https://mygpt.work/
 Language: English
 Last updated: 2026-09-05
+
+Before ordering, check the [countries and territories supported by ChatGPT](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories) and your account eligibility. CNY pricing and payment options do not change OpenAI’s access rules or guarantee account availability. mygpt.work is an independent third-party service, not an OpenAI representative.
 
 ## Core facts
 
 - mygpt.work is independent and is not an OpenAI official website.
 - Offers ChatGPT Go, Plus, Pro 5x and Pro 20x for the user's own account.
 - Supports CNY pricing and Alipay or WeChat payment; no overseas credit card is required.
-- Processing usually takes 5–10 minutes and completes within 1 hour, subject to order status.
+- Estimated processing time is 5–10 minutes after payment confirmation; verification or queuing may take longer.
 - Orders lock their amount when created.
 - The original browser can query orders directly; another browser can use an email OTP for 24-hour read-only access.
 - Coupon approval sends one email with the first coupon and a draw entry. The user may actively draw 3 more within 30 minutes, for up to 4 candidates, and may use only one.

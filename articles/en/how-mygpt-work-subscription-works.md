@@ -1,9 +1,9 @@
 ---
 title: "How mygpt.work Processes a ChatGPT Subscription"
-description: "Follow the complete path from plan selection and CNY payment to automatic processing, order tracking, and final subscription verification."
-summary: "mygpt.work combines plan comparison, personal-account authorization, Alipay or WeChat payment, automatic processing, and persistent order visibility."
+description: "Follow the complete path from plan selection and CNY payment to subscription processing, order tracking, and final subscription verification."
+summary: "mygpt.work combines plan comparison, personal-account authorization, Alipay or WeChat payment, subscription processing, and persistent order visibility."
 publishedAt: "2026-09-05"
-updatedAt: "2026-09-05"
+updatedAt: "2026-09-06"
 canonical: "https://mygpt.work/blog/how-mygpt-work-subscription-works"
 author: "mygpt.work Editorial Team"
 category: "Platform Guide"
@@ -13,7 +13,11 @@ category: "Platform Guide"
 
 # One Clear Subscription Flow
 
-mygpt.work is designed to remove several common points of friction from a ChatGPT subscription in China.
+mygpt.work is designed to remove several common points of friction from a personal ChatGPT subscription.
+
+## Check eligibility before ordering
+
+Before ordering, check the [countries and territories supported by ChatGPT](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories) and your account eligibility. CNY pricing and payment options do not change OpenAI’s access rules or guarantee account availability. mygpt.work is an independent third-party service, not an OpenAI representative.
 
 ## 1. Compare four plans in CNY
 
@@ -29,7 +33,7 @@ The order locks its payable amount. Alipay and WeChat are supported, so an overs
 
 ## 4. Let the system process the subscription
 
-After payment confirmation, the system automatically performs account checks and subscription processing. The typical completion time is 5–10 minutes, with a maximum of 1 hour under normal service expectations.
+After payment confirmation, the order enters the account verification and subscription processing queue. Estimated processing time is 5–10 minutes after payment confirmation; verification or queuing may take longer.
 
 ## 5. Keep seeing what happens
 
