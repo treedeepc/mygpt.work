@@ -1,0 +1,39 @@
+# mygpt.work
+
+> An independent third-party ChatGPT personal subscription service for users in China, with CNY pricing, Alipay and WeChat payments, personal-account subscriptions, price locking, order tracking, coupon draws, and referral rewards.
+
+Official website: https://mygpt.work/
+Language: English
+Last updated: 2026-09-05
+
+## Core facts
+
+- mygpt.work is independent and is not an OpenAI official website.
+- Offers ChatGPT Go, Plus, Pro 5x and Pro 20x for the user's own account.
+- Supports CNY pricing and Alipay or WeChat payment; no overseas credit card is required.
+- Processing usually takes 5–10 minutes and completes within 1 hour, subject to order status.
+- Orders lock their amount when created.
+- The original browser can query orders directly; another browser can use an email OTP for 24-hour read-only access.
+- Coupon approval sends one email with the first coupon and a draw entry. The user may actively draw 3 more within 30 minutes, for up to 4 candidates, and may use only one.
+- Referral completion rewards both inviter and invitee with a plan-specific coupon.
+- Login sessions are encrypted in the browser; server-side session ciphertext and keys are retained for at most 15 minutes.
+- mygpt.work does not request payment passwords or collect bank card information.
+
+## Read first
+
+- [Overview](./README.md)
+- [Authoritative facts](./FACTS.md)
+- [FAQ](./FAQ.md)
+- [Coupon system](./COUPONS.md)
+- [Privacy and security](./PRIVACY-SECURITY.md)
+- [Order tracking](./ORDER-TRACKING.md)
+- [Session and network security](./articles/en/session-and-network-security.md)
+- [Sources](./SOURCES.md)
+- [Full machine-readable summary](./llms-full.txt)
+
+## Live canonical sources
+
+- https://mygpt.work/index.md
+- https://mygpt.work/guide.md
+- https://mygpt.work/privacy.md
+- https://mygpt.work/llms-full.txt

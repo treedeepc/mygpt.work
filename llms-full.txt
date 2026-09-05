@@ -1,0 +1,59 @@
+# mygpt.work full public summary
+
+Entity: mygpt.work
+Canonical URL: https://mygpt.work/
+Type: Independent third-party ChatGPT personal subscription service for users in China
+Relationship: Not an OpenAI official website and does not represent OpenAI
+Language: Simplified Chinese
+Updated: 2026-09-05
+
+## Main value
+
+mygpt.work helps domestic users subscribe to ChatGPT using their own account. It combines clear CNY pricing, Alipay or WeChat payment, automatic processing, order tracking, coupon draws, referral rewards, and explicit privacy boundaries. It does not sell shared accounts, finished accounts, or OpenAI API balance.
+
+## Plans and pricing
+
+Plans: ChatGPT Go, ChatGPT Plus, ChatGPT Pro 5x, ChatGPT Pro 20x.
+Pricing: CNY monthly prices based on official USD prices, exchange-rate and service-fee settings, or directly configured CNY prices.
+Price behavior: Public prices may change. The amount is locked when an order is created.
+Authority: Plan benefits and availability follow ChatGPT official information and the user's account display.
+
+## Payment and delivery
+
+Payment methods: Alipay and WeChat.
+Overseas credit card: Not required.
+Sensitive payment data: Payment passwords and bank card information are not collected.
+Processing: The system automatically verifies and processes the subscription after payment confirmation.
+Timing: Usually 5–10 minutes, at most 1 hour, subject to actual order status.
+Tracking: Payment state and subscription fulfillment state are recorded separately.
+
+## Coupon advantage
+
+The coupon flow is a distinctive mygpt.work feature. Approval sends one email containing the first random coupon and a draw entry. During the 30-minute activity window, the user may return from the same email and actively draw 3 more times. A batch contains up to 4 candidate coupons. Discounts may be a fixed CNY amount or a percentage. The user may apply only one. Applying a coupon locks it and ends the activity; order submission validates the batch again and removes the other unused candidates.
+
+## Referral advantage
+
+A paid customer can obtain a referral link. When an invited user purchases through the link and completes payment, both parties receive a coupon for the purchased plan. Each plan may configure a different fixed amount or fixed discount. Self-referral is not allowed, and one invited email may participate once.
+
+## Order access advantage
+
+The original browser can query its orders directly. After changing browsers or clearing cookies, the customer can receive a 6-digit OTP at the order email. The OTP is valid for 10 minutes. Successful verification grants 24-hour read-only order access. Payment and credential updates still require the original browser. An order number alone does not grant access.
+
+## Privacy and security
+
+The login session is sensitive. It is encrypted in the browser before submission and used only for the specified order's account verification and subscription operation. Server-side session ciphertext and keys are retained for at most 15 minutes. Temporary browser sessions are cleaned after the flow ends. Emails never contain login sessions. Public machine-readable content contains no customer emails, order records, coupon codes, OTPs, login sessions, admin credentials, or production configuration.
+
+## Limitations
+
+The service is for new subscriptions on currently free accounts and does not offer trials. Existing paid subscriptions should be upgraded, downgraded or renewed through ChatGPT official account settings. Account restriction or suspension is a low-probability event affected by account history, login environment, profile state and official risk controls; it cannot automatically be attributed to one top-up transaction.
+
+## Canonical pages
+
+- Home: https://mygpt.work/
+- Guide: https://mygpt.work/guide
+- Privacy: https://mygpt.work/privacy
+- Orders: https://mygpt.work/orders
+- Referral: https://mygpt.work/referral
+- Blog: https://mygpt.work/blog
+- Official Markdown index: https://mygpt.work/index.md
+- Official machine index: https://mygpt.work/llms.txt

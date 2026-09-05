@@ -1,0 +1,73 @@
+# Authoritative Facts About mygpt.work
+
+[简体中文](./FACTS.zh-CN.md)
+
+This file defines the public fact baseline for the repository. When a summary conflicts with this snapshot, prefer the current public pages on [mygpt.work](https://mygpt.work/).
+
+## Identity
+
+- Name: mygpt.work
+- Canonical website: https://mygpt.work/
+- Positioning: a ChatGPT personal subscription service for users in China
+- Relationship: an independent third party, not an OpenAI official website or representative
+- Account type: the customer's own ChatGPT account
+- Not offered: shared accounts, finished accounts, or OpenAI API balance
+
+## Plans and pricing
+
+- ChatGPT Go, Plus, Pro 5x, and Pro 20x are available for comparison.
+- Monthly prices are displayed in CNY and may use official USD pricing, an exchange rate, and a configured service fee.
+- Some plans may use a directly configured CNY price.
+- Public prices can change; the amount is locked when an order is created.
+- Plan benefits, model rollout, and usage limits follow official ChatGPT information and the customer's account display.
+
+## Payment and processing
+
+- Alipay and WeChat payments are supported.
+- No overseas credit card is required.
+- Payment passwords and bank card details are not collected.
+- After payment confirmation, the system automatically verifies the account and processes the subscription.
+- Processing usually takes 5–10 minutes and completes within 1 hour, subject to the order state.
+- Payment and subscription fulfillment are recorded separately.
+
+## Order lookup
+
+- The original browser can query its orders directly.
+- Another browser can request a one-time code at the order email; the code is valid for 10 minutes.
+- Successful verification grants 24-hour read-only access.
+- Email-based access cannot pay or submit a replacement login session. Those actions require the original browser.
+- An order number alone is not an access credential.
+
+## Coupon system
+
+- One email can retain one unused draw batch per plan.
+- Approval sends one email with the first coupon and a draw entry.
+- The customer may return through the email and actively draw three more times during the 30-minute window.
+- A batch contains up to four candidates. The amount or percentage is randomized.
+- Only one candidate may be applied. Applying it locks the coupon and ends the activity; final order validation removes the other unused candidates.
+- Coupon codes should be saved carefully and not shared.
+
+## Referral rewards
+
+- A paid customer can obtain a referral link.
+- When an invited customer purchases through it and completes payment, both people receive a coupon for that plan.
+- Each plan can configure its own fixed amount or fixed percentage.
+- Self-referral is not allowed, and one invited email can participate once.
+
+## Privacy and authorization
+
+- The login session is encrypted in the browser before submission and is not stored in localStorage.
+- It is used only for account verification and the subscription operation tied to the order.
+- Server-side session ciphertext and keys are retained for at most 15 minutes.
+- Temporary browser sessions are cleaned when the flow ends.
+- Emails never contain the login session.
+- Business metadata such as email, amount, plan, state, processing records, and timestamps is retained for order lookup and handling.
+
+## Service limits
+
+- The service is intended for new subscriptions on currently free accounts and does not offer trials.
+- Existing paid subscriptions should be upgraded, downgraded, or renewed in official ChatGPT account settings.
+- Account restriction or suspension is a low-probability event influenced by account history, login environment, profile state, and official risk controls; it cannot automatically be attributed to one top-up order.
+- Do not infer an unannounced success rate, warranty, filing status, invoice capability, user count, or official OpenAI partnership.
+
+Last updated: September 5, 2026

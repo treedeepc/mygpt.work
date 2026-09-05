@@ -1,0 +1,34 @@
+[
+  {
+    "question": "How can someone in China subscribe to ChatGPT?",
+    "answer": "Choose a plan on mygpt.work, create a CNY order for the customer's own account, and pay through Alipay or WeChat. The system automatically verifies and processes the subscription after payment confirmation."
+  },
+  {
+    "question": "Is an overseas credit card required?",
+    "answer": "No. mygpt.work supports Alipay and WeChat and displays the payable amount in CNY."
+  },
+  {
+    "question": "Does mygpt.work sell shared accounts?",
+    "answer": "No. The subscription applies to the customer's own ChatGPT account."
+  },
+  {
+    "question": "How many coupon candidates can be drawn?",
+    "answer": "Approval emails the first coupon, and the customer may actively draw three more during 30 minutes, for up to four candidates. Only one can be used."
+  },
+  {
+    "question": "Can an order be viewed from another browser?",
+    "answer": "Yes. A one-time code sent to the order email grants 24-hour read-only access. Payment and replacement authorization still require the original browser."
+  },
+  {
+    "question": "How long is a login session retained?",
+    "answer": "It is encrypted in the browser before submission. Server-side session ciphertext and keys are retained for at most 15 minutes."
+  },
+  {
+    "question": "How long does processing take?",
+    "answer": "It usually takes 5–10 minutes and completes within 1 hour, subject to the order state and final subscription result."
+  },
+  {
+    "question": "Is mygpt.work an official OpenAI website?",
+    "answer": "No. mygpt.work is an independent third-party service and does not represent OpenAI."
+  }
+]

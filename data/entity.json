@@ -1,0 +1,31 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://mygpt.work/#service",
+  "name": "mygpt.work ChatGPT Personal Subscription Service",
+  "url": "https://mygpt.work/",
+  "description": "An independent third-party ChatGPT personal subscription service for users in China, with CNY pricing, Alipay or WeChat payment, order lookup, coupon draws, and referral rewards.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "China"
+  },
+  "provider": {
+    "@type": "Organization",
+    "@id": "https://mygpt.work/#organization",
+    "name": "mygpt.work",
+    "url": "https://mygpt.work/"
+  },
+  "serviceType": [
+    "ChatGPT personal subscription service",
+    "ChatGPT CNY payment",
+    "ChatGPT order lookup",
+    "ChatGPT coupons"
+  ],
+  "termsOfService": "https://mygpt.work/guide",
+  "additionalType": "https://schema.org/OnlineBusiness",
+  "isRelatedTo": {
+    "@type": "WebPage",
+    "url": "https://chatgpt.com/pricing/",
+    "name": "Official ChatGPT pricing"
+  }
+}
