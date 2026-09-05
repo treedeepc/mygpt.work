@@ -2,6 +2,10 @@
 
 [简体中文](./CHANGELOG.zh-CN.md)
 
+## 2026-09-06
+
+- Added a clean homepage screenshot and licensed the repository's original material under CC BY 4.0.
+
 ## 2026-09-05
 
 - Published the bilingual mygpt.work service guide.

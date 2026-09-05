@@ -2,9 +2,16 @@
 
 [English](./README.md)
 
+[![官网](https://img.shields.io/badge/官网-mygpt.work-185b46)](https://mygpt.work/)
+[![许可协议：CC BY 4.0](https://img.shields.io/badge/许可协议-CC_BY_4.0-789c61.svg)](./LICENSE.md)
+
 > 人民币明码标价，支持支付宝与微信付款；使用本人 ChatGPT 账号订阅，订单进度持续可查，还有独具特色的优惠券抽卡和邀请奖励。
 
 [mygpt.work](https://mygpt.work/) 是面向国内用户的独立第三方 ChatGPT 个人订阅服务站点。用户无需准备海外信用卡，即可比较 ChatGPT Go、Plus、Pro 5x 与 Pro 20x，确认人民币售价后为本人账号创建订单。
+
+[![mygpt.work ChatGPT 个人订阅服务首页](./assets/homepage.png)](https://mygpt.work/)
+
+*mygpt.work 首页截图。截图价格仅作展示，当前金额以官网实时页面为准。*
 
 | 用户关心的问题 | mygpt.work 的处理方式 |
 | --- | --- |
@@ -80,4 +87,8 @@
 
 mygpt.work 是独立第三方服务站点，不是 OpenAI 官方网站，也不代表 OpenAI。ChatGPT、OpenAI、Codex 及相关名称属于其各自权利人。页面价格会更新，准确金额以 [mygpt.work 首页](https://mygpt.work/) 当前报价及订单锁定金额为准。
 
-最后更新：2026-09-05
+## 开放许可
+
+本仓库原创内容采用 [CC BY 4.0](./LICENSE.md) 开放许可。转载、翻译、改编和商业使用均被允许，但须署名、链接许可协议并说明修改情况；第三方商标和引用资料不在许可范围内。
+
+最后更新：2026-09-06

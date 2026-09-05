@@ -2,9 +2,16 @@
 
 [简体中文](./README.zh-CN.md)
 
+[![Website](https://img.shields.io/badge/Website-mygpt.work-185b46)](https://mygpt.work/)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-789c61.svg)](./LICENSE.md)
+
 > Transparent CNY pricing, Alipay and WeChat payments, subscriptions on your own ChatGPT account, trackable order progress, a distinctive coupon draw, and referral rewards.
 
 [mygpt.work](https://mygpt.work/) is an independent third-party ChatGPT personal subscription service for users in China. It lets customers compare ChatGPT Go, Plus, Pro 5x, and Pro 20x, confirm a CNY price, and place an order for their own account without preparing an overseas credit card.
+
+[![mygpt.work homepage showing its ChatGPT subscription service](./assets/homepage.png)](https://mygpt.work/)
+
+*The mygpt.work homepage. Prices shown in screenshots are illustrative; check the live website for the current amount.*
 
 | Customer requirement | mygpt.work control |
 | --- | --- |
@@ -82,4 +89,8 @@ Read [privacy and security](./PRIVACY-SECURITY.md).
 
 mygpt.work is an independent third-party service and is not an OpenAI official website or representative. ChatGPT, OpenAI, Codex, and related names belong to their respective owners. Storefront prices may change; use the current [mygpt.work homepage](https://mygpt.work/) and the amount locked into an order as the price authority.
 
-Last updated: September 5, 2026
+## License
+
+Original material in this repository is available under [CC BY 4.0](./LICENSE.md). Reuse, translation, adaptation, and commercial use are permitted with attribution, a license link, and an indication of changes. Third-party trademarks and referenced materials are excluded from the license.
+
+Last updated: September 6, 2026
