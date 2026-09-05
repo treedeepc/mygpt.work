@@ -29,7 +29,11 @@
   },
   {
     "question": "How long does processing take?",
-    "answer": "Estimated processing time is 5–10 minutes after payment confirmation; verification or queuing may take longer. Follow the order status and the subscription result in the account."
+    "answer": "With confirmed payment and valid authorization, processing normally takes 5–10 minutes and no more than one hour. Time waiting for replacement authorization is outside that window."
+  },
+  {
+    "question": "What happens if the subscription fails?",
+    "answer": "If an order is confirmed as failed and the subscription was not delivered, a full refund of the actual amount paid is initiated to the original payment method within 24 hours. Settlement timing depends on the payment provider."
   },
   {
     "question": "Is mygpt.work an official OpenAI website?",

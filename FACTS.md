@@ -27,8 +27,9 @@ This file defines the public fact baseline for the repository. When a summary co
 - No overseas credit card is required.
 - Payment passwords and bank card details are not collected.
 - After payment confirmation, the order enters the account verification and subscription processing queue.
-- Estimated processing time is 5–10 minutes after payment confirmation. Verification or queuing may take longer; follow the recorded order status.
+- After payment is confirmed and valid authorization is available, processing normally takes 5–10 minutes and no more than one hour. Time waiting for replacement authorization is outside that window.
 - Payment and subscription fulfillment are recorded separately.
+- If an order is confirmed as failed and the subscription was not delivered, a full refund of the actual amount paid is initiated to the original payment method within 24 hours. Settlement timing depends on the payment provider.
 
 ## Order lookup
 

@@ -33,7 +33,7 @@ mygpt.work does not sell shared accounts. The login session is encrypted in the 
 
 ## Step 4: Pay and track
 
-Use Alipay or WeChat according to the order instructions. The order enters the processing queue after payment confirmation. Estimated processing time is 5–10 minutes after payment confirmation; verification or queuing may take longer.
+Use Alipay or WeChat according to the order instructions. After payment is confirmed and valid account authorization is available, processing normally takes 5–10 minutes and no more than one hour. Time spent waiting for replacement authorization is outside that processing window.
 
 The original browser can query directly. Another browser can verify the order email for read-only access, so changing devices does not erase visibility.
 

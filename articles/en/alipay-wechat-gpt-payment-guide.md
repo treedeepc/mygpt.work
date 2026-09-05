@@ -32,7 +32,7 @@ Payment status and subscription status are shown separately. This matters becaus
 
 ## Track the order instead of paying twice
 
-Estimated processing time is 5–10 minutes after payment confirmation; verification or queuing may take longer. The original browser can query the order directly. If the customer changes browsers or clears cookies, the order email can receive a one-time code for 24-hour read-only access.
+With confirmed payment and valid account authorization, processing normally takes 5–10 minutes and no more than one hour. Time spent waiting for replacement authorization is outside that processing window. The original browser can query the order directly. If the customer changes browsers or clears cookies, the order email can receive a one-time code for 24-hour read-only access.
 
 Do not repeat the payment just because ChatGPT still shows Free for a few minutes. Check the recorded order state first.
 

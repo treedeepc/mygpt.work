@@ -16,11 +16,15 @@ Follow the order's payment instructions and verify the amount and recipient. Ali
 
 ## Processing and order access
 
-After payment confirmation, the order enters the account verification and subscription processing queue. The estimated processing time is 5–10 minutes. Queuing, verification, expired authorization, or an official-service issue may take longer; there is no guaranteed completion deadline.
+After payment is confirmed and valid account authorization is available, the order enters account verification and subscription processing. It normally completes in 5–10 minutes and no more than one hour. If authorization expires, the order waits for replacement authorization; that waiting time is outside the processing window.
 
 Payment and subscription processing are tracked separately. Check both the order record and the actual subscription in the account. The original browser can view the order directly; another browser can obtain read-only access by verifying the order email. Replacement authorization must be submitted from the original browser and does not require another payment.
 
-If fulfillment is incomplete, check the existing order before paying again. Refund review depends on the recorded payment, processing stage, and official subscription result.
+## Failed fulfillment and refunds
+
+If an order is confirmed as failed and the subscription was not delivered, a full refund of the actual amount paid will be initiated to the original payment method within 24 hours. Settlement timing depends on Alipay, WeChat, or the relevant payment provider. Orders still processing or waiting for replacement authorization are not treated as failed; successfully delivered subscriptions are not covered by this refund rule.
+
+If fulfillment is incomplete, check the existing order before paying again.
 
 ## Coupons and referrals
 

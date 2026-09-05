@@ -24,7 +24,11 @@ No. The subscription applies to the customer's own ChatGPT account. mygpt.work d
 
 ## How long does processing take?
 
-Estimated processing time is 5–10 minutes after payment confirmation; verification or queuing may take longer. Account verification, an expired authorization, or an official-page issue can affect the timing. Use the recorded order state as the authority.
+After payment is confirmed and valid account authorization is available, processing normally takes 5–10 minutes and no more than one hour. Time spent waiting for replacement authorization is outside that processing window. Use the recorded order state as the authority.
+
+## What happens if the subscription fails?
+
+If an order is confirmed as failed and the subscription was not delivered, a full refund of the actual amount paid will be initiated to the original payment method within 24 hours. Settlement timing depends on Alipay, WeChat, or the relevant payment provider. Orders still processing or waiting for replacement authorization are not treated as failed, and successfully delivered subscriptions are not covered by this refund rule.
 
 ## Can the price change after an order is placed?
 

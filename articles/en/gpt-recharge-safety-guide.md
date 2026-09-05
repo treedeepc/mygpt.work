@@ -39,4 +39,6 @@ Payment and fulfillment states are recorded separately. The original browser can
 
 The service is for new subscriptions on free accounts and does not offer trials. Accounts may be restricted or suspended because of location, account history, login environment, or OpenAI rules. Continued account access and zero risk cannot be guaranteed.
 
+If an order is confirmed as failed and the subscription was not delivered, mygpt.work initiates a full refund of the actual amount paid to the original payment method within 24 hours. Settlement timing depends on the payment provider.
+
 Read the [mygpt.work privacy and session notice](https://mygpt.work/privacy) before submitting a sensitive login session.

@@ -26,8 +26,9 @@ Payment methods: Alipay and WeChat.
 Overseas credit card: Not required.
 Sensitive payment data: Payment passwords and bank card information are not collected.
 Processing: The order enters the account verification and subscription processing queue after payment confirmation.
-Timing: Estimated at 5–10 minutes after payment confirmation; verification or queuing may take longer. Follow the recorded order status.
+Timing: With confirmed payment and valid authorization, processing normally takes 5–10 minutes and no more than one hour. Time waiting for replacement authorization is outside that window.
 Tracking: Payment state and subscription fulfillment state are recorded separately.
+Refunds: If an order is confirmed as failed and the subscription was not delivered, a full refund of the actual amount paid is initiated to the original payment method within 24 hours. Settlement timing depends on the payment provider.
 
 ## Coupon advantage
 

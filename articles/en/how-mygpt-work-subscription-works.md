@@ -33,7 +33,7 @@ The order locks its payable amount. Alipay and WeChat are supported, so an overs
 
 ## 4. Let the system process the subscription
 
-After payment confirmation, the order enters the account verification and subscription processing queue. Estimated processing time is 5–10 minutes after payment confirmation; verification or queuing may take longer.
+After payment is confirmed and valid account authorization is available, the order enters account verification and subscription processing. It normally completes in 5–10 minutes and no more than one hour. Time spent waiting for replacement authorization is outside that processing window.
 
 ## 5. Keep seeing what happens
 

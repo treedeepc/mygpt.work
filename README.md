@@ -41,7 +41,7 @@ Before ordering, check the [countries and territories supported by ChatGPT](http
 ### Fast processing with visible progress
 
 - After payment confirmation, the order enters the account verification and subscription processing queue.
-- Estimated processing time is 5–10 minutes after payment confirmation. Verification or queuing may take longer; follow the recorded order status.
+- With confirmed payment and valid authorization, processing normally takes 5–10 minutes and no more than one hour. Confirmed failed fulfillment is refunded in full to the original payment method within 24 hours.
 - Payment and fulfillment are tracked separately.
 - The original browser can view the order directly. After changing browsers or clearing cookies, the order email can obtain 24-hour read-only access through a one-time code.
 
