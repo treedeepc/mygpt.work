@@ -28,7 +28,9 @@ This repository publishes service documentation, machine-readable facts, and a r
 
 - The session Redis is separate from the persistent job queue, has RDB and AOF disabled, and has no persistent `/data` volume.
 - Website, API, and worker containers use read-only root filesystems, restricted writable temporary filesystems, dropped capabilities, and resource limits.
-- Public traffic terminates at Nginx; application listeners and data services bind to loopback addresses.
+- HTTP requests receive a permanent redirect to HTTPS. TLS traffic negotiates HTTP/2 at Nginx; duplicate upstream security headers are removed before a single edge policy is returned.
+- Browser responses include HSTS, nonce-based CSP, MIME-sniffing protection, framing denial, a same-origin referrer policy, and a restrictive Permissions Policy. The obsolete browser XSS filter is explicitly disabled in favor of CSP.
+- Application listeners and data services bind to loopback addresses.
 - Back-office access uses revocable server-side sessions. Logout and password rotation invalidate existing application cookies.
 - PostgreSQL backups are access-restricted and restored into a disposable database during recovery checks.
 

@@ -67,8 +67,9 @@ ChatGPT 登录 Session 属于敏感凭证。mygpt.work 将它视为一次订阅�
 ## 网络与浏览器防护
 
 - HTTPS 在浏览器与 mygpt.work 之间建立经过认证的加密通道；现代 TLS 的安全目标由 [RFC 8446](https://www.rfc-editor.org/info/rfc8446/) 定义。
+- HTTP 请求使用 301 跳转到 HTTPS；TLS 入口协商 HTTP/2，协议语义见 [RFC 9113](https://www.rfc-editor.org/rfc/rfc9113)。
 - 基于随机 nonce 的内容安全策略限制脚本执行，禁止脚本属性、对象嵌入和第三方页面框架加载；nonce 与 `strict-dynamic` 行为依据 [Content Security Policy Level 3](https://www.w3.org/TR/CSP3/)。
-- `X-Content-Type-Options: nosniff`、`X-Frame-Options: DENY` 与同源 Referrer Policy 减少常见浏览器攻击面。
+- `X-Content-Type-Options: nosniff`、`X-Frame-Options: DENY`、同源 Referrer Policy 与限制性 Permissions Policy 减少常见浏览器攻击面；旧式 `X-XSS-Protection` 设为 `0`，避免依赖已经废弃且可能产生副作用的过滤器。
 - API 请求在进入业务逻辑前进行结构、格式与长度校验。
 - 一次性公钥、后台登录、邮箱验证码发送与校验、优惠券操作等敏感接口采用更严格的频率限制。
 - 安全事件使用不可逆指纹记录，避免在公开输出中出现原始敏感值。
@@ -84,6 +85,7 @@ mygpt.work 不要求支付宝或微信支付密码，不收集银行卡信息，
 - [NIST SP 800-38D：GCM 认证加密模式](https://csrc.nist.gov/pubs/sp/800/38/d/final)
 - [RFC 8017：PKCS #1 v2.2 与 RSAES-OAEP](https://www.rfc-editor.org/info/rfc8017/)
 - [RFC 8446：TLS 1.3](https://www.rfc-editor.org/info/rfc8446/)
+- [RFC 9113：HTTP/2](https://www.rfc-editor.org/rfc/rfc9113)
 - [MDN：SubtleCrypto.encrypt()](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/encrypt)
 - [W3C：Content Security Policy Level 3](https://www.w3.org/TR/CSP3/)
 - [OWASP Session Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)

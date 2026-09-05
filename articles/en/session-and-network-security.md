@@ -67,8 +67,9 @@ Read-only access can display progress but cannot start payment or submit replace
 ## Network and browser safeguards
 
 - HTTPS provides an authenticated, encrypted channel between the browser and mygpt.work. The security goals of modern TLS are defined in [RFC 8446](https://www.rfc-editor.org/info/rfc8446/).
+- HTTP requests receive a permanent redirect to HTTPS, and the TLS edge negotiates HTTP/2 as specified by [RFC 9113](https://www.rfc-editor.org/rfc/rfc9113).
 - A nonce-based Content Security Policy restricts executable scripts, blocks inline script attributes, rejects embedded objects, and prevents other sites from framing the pages. The nonce and `strict-dynamic` behavior follows [Content Security Policy Level 3](https://www.w3.org/TR/CSP3/).
-- `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`, and a same-origin referrer policy reduce common browser attack paths.
+- `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`, a same-origin referrer policy, and a restrictive Permissions Policy reduce common browser attack paths. The obsolete `X-XSS-Protection` filter is set to `0`; executable content is governed by CSP instead.
 - API payloads are schema validated and size limited before business logic runs.
 - Sensitive endpoints have tighter rate limits, including public-key issue, administrator login, email-code requests, code verification, and coupon actions.
 - Security events use fingerprints instead of placing raw sensitive values in public output.
@@ -84,6 +85,7 @@ No online service can promise zero risk. Customers should use only their own acc
 - [NIST SP 800-38D: Galois/Counter Mode (GCM)](https://csrc.nist.gov/pubs/sp/800/38/d/final)
 - [RFC 8017: PKCS #1 v2.2 and RSAES-OAEP](https://www.rfc-editor.org/info/rfc8017/)
 - [RFC 8446: TLS 1.3](https://www.rfc-editor.org/info/rfc8446/)
+- [RFC 9113: HTTP/2](https://www.rfc-editor.org/rfc/rfc9113)
 - [MDN: SubtleCrypto.encrypt()](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/encrypt)
 - [W3C: Content Security Policy Level 3](https://www.w3.org/TR/CSP3/)
 - [OWASP Session Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)

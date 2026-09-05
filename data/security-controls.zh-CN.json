@@ -51,6 +51,10 @@
     {
       "name": "执行隔离",
       "detail": "每次执行启动新的浏览器进程与 Context，持久任务队列只传订单标识，不传登录 Session；不声称每单采用容器隔离。"
+    },
+    {
+      "name": "传输与浏览器策略",
+      "detail": "HTTP 永久跳转到 HTTPS，TLS 入口协商 HTTP/2，代理层移除上游重复安全头；浏览器响应包含 HSTS、nonce CSP、MIME 嗅探与框架嵌入防护、同源来源策略和限制性 Permissions Policy。"
     }
   ],
   "limitations": [

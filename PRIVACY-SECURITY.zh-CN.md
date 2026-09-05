@@ -37,7 +37,7 @@ mygpt.work 不用“绝对安全”代替说明，而是公开会收集什么、
 
 15 分钟期限仅适用于临时会话凭证。订单邮箱、金额、套餐、状态、处理记录、优惠券申请、邀请关系和邮件投递记录为查单和业务处理另行保留，当前未设置统一自动删除期限；清除浏览器 Cookie 不会删除服务端记录。
 
-订阅操作会向 ChatGPT 官方服务提交所需账号授权。邮件服务商会处理收件地址和通知内容，邮件不包含登录会话。网站还使用 GoatCounter 访问统计，浏览器会连接其服务，访问及设备信息处理方式见 [GoatCounter 隐私说明](https://www.goatcounter.com/help/privacy)。外部服务的数据处理和存储地点可能与访问者所在地不同。
+订阅操作会向 ChatGPT 官方服务提交所需账号授权。邮件服务商会处理收件地址和通知内容，邮件不包含登录会话。网站使用 Google Analytics 和 GoatCounter 统计访问情况，浏览器会连接这些服务并提交访问路径、来源以及浏览器、设备和语言等技术信息，具体处理方式见 [Google 隐私权政策](https://policies.google.com/privacy) 与 [GoatCounter 隐私说明](https://www.goatcounter.com/help/privacy)。外部服务的数据处理和存储地点可能与访问者所在地不同。
 
 删除本站会话副本不等于退出 ChatGPT 其他登录设备。若担心会话泄露，应在 ChatGPT 官方账号安全设置中管理登录设备。
 

@@ -51,6 +51,10 @@
     {
       "name": "execution isolation",
       "detail": "Each execution launches a fresh browser process and browser context. The durable queue carries an order identifier rather than login-session content; no per-order container isolation is claimed."
+    },
+    {
+      "name": "transport and browser policy",
+      "detail": "HTTP permanently redirects to HTTPS, the TLS edge negotiates HTTP/2, duplicate upstream headers are removed, and browser responses include HSTS, nonce-based CSP, MIME-sniffing and framing protection, a same-origin referrer policy, and a restrictive Permissions Policy."
     }
   ],
   "limitations": [

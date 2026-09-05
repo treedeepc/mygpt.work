@@ -4,6 +4,8 @@
 
 ## 2026-09-06
 
+- Added one site-wide Google tag through the root document, updated the Content Security Policy for its required connections, and disclosed Google Analytics alongside GoatCounter in both languages.
+- Documented HTTPS redirects, HTTP/2 negotiation, deduplicated browser security headers, and the restrictive Permissions Policy.
 - Published a bilingual, dated first-party security assessment summary covering receipt exposure, order isolation, revocation cleanup, replay resistance, idempotency, OTP controls, repository scope, and residual trust.
 - Added a bilingual session-security model, reference pseudocode, and machine-readable controls covering credential minimization, browser isolation, ephemeral storage, backup boundaries, logging, privileged access, and verification limits.
 - Defined the failed-fulfillment policy: a full refund of the actual amount paid is initiated to the original payment method within 24 hours after failure is confirmed.
