@@ -3,7 +3,7 @@ title: "没有海外信用卡，如何完成 ChatGPT 订阅付款？"
 description: "没有海外信用卡也能看懂的 ChatGPT 订阅付款指南：如何选择套餐、使用支付宝或微信付款，以及付款后怎样查询订单。"
 summary: "mygpt.work 支持用户用本人 ChatGPT 账号创建人民币订单，并通过支付宝或微信付款。确认付款后订单进入账号核验与订阅处理队列，订单金额会锁定，可在原浏览器或通过下单邮箱验证码查询进度。"
 publishedAt: "2026-09-05"
-updatedAt: "2026-09-06"
+updatedAt: "2026-09-07"
 canonical: "https://mygpt.work/blog/chatgpt-domestic-recharge-guide"
 author: "mygpt.work 编辑部"
 category: "充值指南"
@@ -29,6 +29,8 @@ keywords:
 3. 核对套餐售价、优惠券和实际付款金额，再创建订单。
 4. 根据订单页面的收款说明，使用支付宝或微信完成付款。
 5. 确认付款后进入订阅处理队列，在原下单浏览器直接查看；换浏览器时可使用下单邮箱验证码查询处理状态。
+
+人民币售价参考官方美元价格与页面显示的汇率，手续费不超过 20%；优惠券抵扣单独显示。
 
 订单创建后会锁定实际付款金额。即使之后人民币售价或汇率发生变化，已经创建的订单也不会跟着改价。关于价格计算，可继续阅读[人民币售价、汇率与订单锁价说明](https://mygpt.work/blog/price-lock-and-exchange-rate)。
 

@@ -3,7 +3,7 @@ title: "How to Pay for a ChatGPT Subscription Without an Overseas Credit Card"
 description: "A practical mygpt.work guide to choosing a plan, paying in CNY, protecting account authorization, and tracking the result."
 summary: "mygpt.work supports personal-account ChatGPT subscriptions with CNY pricing, Alipay or WeChat payment, subscription processing, and order lookup."
 publishedAt: "2026-09-05"
-updatedAt: "2026-09-06"
+updatedAt: "2026-09-07"
 canonical: "https://mygpt.work/blog/chatgpt-domestic-recharge-guide"
 author: "mygpt.work Editorial Team"
 category: "Subscription Guide"
@@ -25,7 +25,7 @@ Go is the lightest starting point. Plus is designed for regular study, writing, 
 
 ## Step 2: Confirm the price
 
-The storefront shows a CNY monthly amount. It may reflect the official USD price, an exchange rate, and a configured service fee, or use a directly configured CNY amount. Once an order is created, its amount is locked.
+The storefront shows a CNY monthly amount. Prices reference the official USD price and the exchange rate shown on the storefront, and service fees do not exceed 20%. Some plans may use a direct CNY price. Coupon deductions are shown separately, and the payable amount is locked when the order is created.
 
 ## Step 3: Submit your own account
 

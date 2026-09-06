@@ -5,7 +5,7 @@ Canonical URL: https://mygpt.work/
 Type: Independent third-party ChatGPT personal subscription service
 Relationship: Not an OpenAI official website and does not represent OpenAI
 Language: English
-Updated: 2026-09-06
+Updated: 2026-09-07
 
 Before ordering, check the [countries and territories supported by ChatGPT](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories) and your account eligibility. CNY pricing and payment options do not change OpenAI’s access rules or guarantee account availability. mygpt.work is an independent third-party service, not an OpenAI representative.
 
@@ -16,8 +16,8 @@ mygpt.work helps customers subscribe to ChatGPT using their own account. It comb
 ## Plans and pricing
 
 Plans: ChatGPT Go, ChatGPT Plus, ChatGPT Pro 5x, ChatGPT Pro 20x.
-Pricing: CNY monthly prices based on official USD prices, exchange-rate and service-fee settings, or directly configured CNY prices.
-Price behavior: Public prices may change. The amount is locked when an order is created.
+Pricing: CNY monthly prices reference official USD prices and the exchange rate shown on the storefront. Service fees do not exceed 20%, and some plans use a direct CNY price.
+Price behavior: Public prices may change. Coupon deductions are shown separately, and the payable amount is locked when an order is created.
 Authority: Plan benefits and availability follow ChatGPT official information and the user's account display.
 
 ## Payment and delivery

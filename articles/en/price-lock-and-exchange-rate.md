@@ -1,9 +1,9 @@
 ---
 title: "ChatGPT CNY Pricing: Exchange Rates, Service Fees, and Order Price Locking"
 description: "How mygpt.work presents CNY prices, distinguishes dynamic storefront updates from a locked order amount, and links back to official plan information."
-summary: "The storefront can reflect official USD pricing, an exchange rate, and a configured fee, while each created order keeps its own locked CNY amount."
+summary: "CNY prices reference official USD pricing and the exchange rate shown on the storefront. Service fees do not exceed 20%, coupon deductions are shown separately, and each order keeps its locked payable amount."
 publishedAt: "2026-09-05"
-updatedAt: "2026-09-05"
+updatedAt: "2026-09-07"
 canonical: "https://mygpt.work/blog/price-lock-and-exchange-rate"
 author: "mygpt.work Editorial Team"
 category: "Pricing"
@@ -13,7 +13,7 @@ category: "Pricing"
 
 # Understand the CNY Price Before Paying
 
-mygpt.work displays a CNY monthly price so customers can confirm the amount before creating an order. The storefront may calculate a price from the official USD reference, a USD/CNY exchange rate, and a configured service fee. A plan may also use a directly configured CNY amount.
+mygpt.work displays a CNY monthly price so customers can confirm the amount before creating an order. Prices reference the official USD price and the exchange rate shown on the storefront, and service fees do not exceed 20%. Some plans may use a direct CNY price.
 
 ## Storefront price versus order price
 

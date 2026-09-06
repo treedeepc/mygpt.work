@@ -10,7 +10,7 @@ mygpt.work is an independent third-party service. It processes new personal subs
 
 ## Price and payment
 
-The storefront displays a CNY service price. Prices may reflect the official USD reference, an exchange rate, and a service fee, or a directly configured amount. The payable amount and coupon deduction are recorded when the order is created. Later storefront changes do not change that order.
+The storefront displays a CNY service price. Prices reference the official USD price and the exchange rate shown on the storefront, and service fees do not exceed 20%; some plans use a direct CNY price. The payable amount and coupon deduction are recorded when the order is created. Later storefront changes do not change that order.
 
 Follow the order's payment instructions and verify the amount and recipient. Alipay or WeChat payment support does not imply that OpenAI accepts those payment methods or that mygpt.work has an official partnership with either provider.
 
@@ -36,4 +36,4 @@ Payment gifts and referral rewards depend on the activity settings. Use the actu
 
 Accounts may be restricted or suspended because of location, account history, login environment, or OpenAI rules. Continued account access and zero risk cannot be guaranteed. A login session is a sensitive credential used for the specified order; read the [data-handling notice](./PRIVACY-SECURITY.md) before submitting it.
 
-Last updated: September 6, 2026
+Last updated: September 7, 2026

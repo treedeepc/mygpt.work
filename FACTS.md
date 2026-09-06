@@ -16,7 +16,7 @@ This file defines the public fact baseline for the repository. When a summary co
 ## Plans and pricing
 
 - ChatGPT Go, Plus, Pro 5x, and Pro 20x are available for comparison.
-- Monthly prices are displayed in CNY and may use official USD pricing, an exchange rate, and a configured service fee.
+- Monthly prices are displayed in CNY, reference official USD pricing and the exchange rate shown on the storefront, and include a service fee that does not exceed 20%.
 - Some plans may use a directly configured CNY price.
 - Public prices can change; the amount is locked when an order is created.
 - Plan benefits, model rollout, and usage limits follow official ChatGPT information and the customer's account display.
@@ -76,4 +76,4 @@ Before ordering, check the [countries and territories supported by ChatGPT](http
 - Accounts may be restricted or suspended because of location, account history, login environment, or OpenAI rules. Continued account access and zero risk cannot be guaranteed.
 - Do not infer an unannounced success rate, warranty, filing status, invoice capability, user count, or official OpenAI partnership.
 
-Last updated: September 6, 2026
+Last updated: September 7, 2026

@@ -32,7 +32,7 @@ If an order is confirmed as failed and the subscription was not delivered, a ful
 
 ## Can the price change after an order is placed?
 
-The storefront can change with pricing, exchange-rate, and service-fee settings. The amount is locked when an order is created, so later storefront changes do not modify that order.
+The CNY price references the official USD price and the exchange rate shown on the storefront, and service fees do not exceed 20%. The payable amount is locked when an order is created, so later storefront changes do not modify that order.
 
 ## What makes the coupon system different?
 
